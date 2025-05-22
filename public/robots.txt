@@ -1,0 +1,5 @@
+# robots.txt for Legacy Boxing website
+# This file tells search engine crawlers which parts of the site they can access
+
+User-agent: *
+Allow: /
