@@ -14,15 +14,11 @@ export default defineConfig(({ mode }) => ({
       },
     }),
     viteImagemin({
-      gifsicle: {
-        optimizationLevel: 7,
-        interlaced: false,
-      },
       webp: {
-        quality: 50,
+        quality: 20,
       },
       optipng: {
-        optimizationLevel: 7,
+        optimizationLevel: 5,
       },
       mozjpeg: {
         quality: 20,
@@ -34,7 +30,6 @@ export default defineConfig(({ mode }) => ({
       svgo: {
         plugins: [
           { name: 'removeViewBox' },
-          { name: 'removeEmptyAttrs', active: false },
         ],
       },
     }),
