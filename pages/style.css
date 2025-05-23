@@ -3,27 +3,18 @@
 @theme {
   --color-boxing-red: #c40110;
   --color-legacy-red: #6F1712;
-
-  --animate-fade-in: fade-in 1s 2s;
-
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 }
-body {
-  font-family: 'Inter', sans-serif;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
+
 html {
+  font-family: 'Inter', sans-serif;
   background-color: var(--color-slate-950);
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
