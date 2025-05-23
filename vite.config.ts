@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 import TailwindCSS from '@tailwindcss/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
+import viteImagemin from 'vite-plugin-imagemin'
 
 export default defineConfig(({ mode }) => ({
   appType: 'mpa',
@@ -11,7 +12,32 @@ export default defineConfig(({ mode }) => ({
       analytics: {
         id: 'G-9LQ8HHZE9B',
       },
-    })
+    }),
+    viteImagemin({
+      gifsicle: {
+        optimizationLevel: 7,
+        interlaced: false,
+      },
+      webp: {
+        quality: 50,
+      },
+      optipng: {
+        optimizationLevel: 7,
+      },
+      mozjpeg: {
+        quality: 20,
+      },
+      pngquant: {
+        quality: [0.8, 0.9],
+        speed: 4,
+      },
+      svgo: {
+        plugins: [
+          { name: 'removeViewBox' },
+          { name: 'removeEmptyAttrs', active: false },
+        ],
+      },
+    }),
   ],
   build: {
     outDir: "./dist",
