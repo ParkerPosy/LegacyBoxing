@@ -15,22 +15,7 @@ export default defineConfig(({ mode }) => ({
     }),
     viteImagemin({
       webp: {
-        quality: 20,
-      },
-      optipng: {
-        optimizationLevel: 5,
-      },
-      mozjpeg: {
-        quality: 20,
-      },
-      pngquant: {
-        quality: [0.8, 0.9],
-        speed: 4,
-      },
-      svgo: {
-        plugins: [
-          { name: 'removeViewBox' },
-        ],
+        quality: 30,
       },
     }),
   ],
