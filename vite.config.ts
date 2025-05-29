@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => ({
       input: {
         main: resolve(__dirname, 'index.html'),
         courses: resolve(__dirname, 'pages/courses/index.html'),
-        pricing: resolve(__dirname, 'pages/pricing/index.html'),
+        membership: resolve(__dirname, 'pages/membership/index.html'),
         gallery: resolve(__dirname, 'pages/gallery/index.html'),
         contact: resolve(__dirname, 'pages/contact/index.html'),
       },
