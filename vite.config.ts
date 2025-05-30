@@ -3,11 +3,13 @@ import { resolve } from 'path'
 import TailwindCSS from '@tailwindcss/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
 import viteImagemin from 'vite-plugin-imagemin'
+import Sitemap from 'vite-plugin-sitemap'
 
 export default defineConfig(({ mode }) => ({
   appType: 'mpa',
   plugins: [
     TailwindCSS(),
+    Sitemap({ hostname: 'https://www.legacy-boxing.com' }),
     VitePluginRadar({
       analytics: {
         id: 'G-9LQ8HHZE9B',
