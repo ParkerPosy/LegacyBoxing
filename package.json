@@ -15,6 +15,7 @@
     "gulp-webp": "^5.0.0",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
+    "vite-plugin-html-inject": "^1.1.2",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-sitemap": "^0.8.2"
   },

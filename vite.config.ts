@@ -4,6 +4,7 @@ import TailwindCSS from '@tailwindcss/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
 import viteImagemin from 'vite-plugin-imagemin'
 import Sitemap from 'vite-plugin-sitemap'
+import injectHTML from 'vite-plugin-html-inject';
 
 export default defineConfig(({ mode }) => ({
   appType: 'mpa',
@@ -15,6 +16,7 @@ export default defineConfig(({ mode }) => ({
         id: 'G-9LQ8HHZE9B',
       },
     }),
+    injectHTML(),
     viteImagemin({
       webp: {
         quality: 30,
