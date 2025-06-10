@@ -76,6 +76,57 @@
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">
     <load src="/pages/components/header.html" />
+    <div
+      class="bg-blue-200 rounded-b text-blue-900 px-4 py-4"
+      role="alert"
+      id="announcement-banner"
+    >
+      <div class="container mx-auto flex items-center">
+        <div class="py-1">
+          <svg
+            class="h-12 w-12 pr-4"
+            stroke="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              stroke-width="0.3"
+              d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"
+            />
+          </svg>
+        </div>
+        <div class="w-full">
+          <p class="font-bold">Youth Combat Sports Summer Camp — Enrolling Now!</p>
+          <p class="text-sm">June 24–July 17 · Tue–Thu · 12–4 PM · Ages 7–16 · $125/week</p>
+          <p class="text-sm">Boxing, kickboxing, Judo, fitness, nutrition, and film study. Includes snacks and camp
+            tutors
+            to support training and activities. See our <a
+              href="/pages/courses/"
+              class="text-boxing-red underline"
+            >Courses</a> page for more information.</p>
+        </div>
+        <button
+          id="close-banner"
+          class="ml-4 flex p-2 rounded-md hover:bg-blue-300 focus:outline-none focus:bg-blue-300 focus-visible"
+          aria-label="Close Announcement Banner"
+          onclick="document.getElementById('announcement-banner').style.display='none';"
+        >
+          <svg
+            class="h-6 w-6"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <div class="mx-10 py-10">
       <load src="/pages/main.html" />
