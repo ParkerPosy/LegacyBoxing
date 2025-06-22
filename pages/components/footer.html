@@ -2,28 +2,33 @@
   class="bg-black text-white py-10 mt-auto shadow-[0_-1px_3px_0_rgb(0,0,0/0.1),0_-1px_2px_-1px_rgb(0,0,0/0.1)] shadow-gray-700"
 >
   <div class="container mx-auto px-8">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-6 md:mb-0 text-center md:text-left space-y-2">
-        <h3 class="text-xl font-bold mb-2">Legacy Boxing and Combat Sports Academy</h3>
+    <div class="flex flex-col justify-center md:flex-row md:justify-between md:items-start gap-8">
+
+      <!-- Contact Info -->
+      <div class="space-y-2 text-center md:text-left">
+        <h3 class="text-xl font-bold">Legacy Boxing and Combat Sports Academy</h3>
+        <p class="text-slate-400">2820 E College Ave, Suite F<br />State College, PA 16801</p>
+        <p class="text-slate-400">
+          <a
+            href="tel:+18145991682"
+            class="hover:text-boxing-red transition"
+          >(814) 599-1682</a>
+        </p>
         <p class="text-slate-400">
           <a
             href="mailto:legacyboxing@proton.me"
             class="hover:text-boxing-red transition"
           >legacyboxing@proton.me</a>
         </p>
-        <p class="text-slate-400">
-          <a
-            href="tel:+1-814-599-1682"
-            class="hover:text-boxing-red transition"
-          >(814) 599-1682</a>
-        </p>
       </div>
-      <div class="mb-6 md:mb-0 text-center md:text-left">
+
+      <!-- Instagram CTA -->
+      <div class="text-center md:text-left">
         <a
-          href="https://www.instagram.com/legacy_boxing_combat_sports/#"
+          href="https://www.instagram.com/legacy_boxing_combat_sports/"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center bg-boxing-red text-white px-3 py-3 rounded-md font-medium hover:underline transition"
+          class="inline-flex items-center bg-boxing-red text-white px-4 py-3 rounded-md font-medium hover:underline transition"
         >
           <svg
             class="w-5 h-5 mr-2"
@@ -36,19 +41,16 @@
               d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
             />
           </svg>
-          <p>Check out our Instagram!</p>
-          <svg
-            class="w-5 h-5 ml-2"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <path
-              d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-            />
-          </svg>
+          Follow Us on Instagram
         </a>
       </div>
     </div>
+
+    <div class="mt-8 text-center text-sm text-slate-500">
+      <p>&copy; <span id="year"></span> Legacy Boxing & Combat Sports Academy. All rights reserved.</p>
+    </div>
+  </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
