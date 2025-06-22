@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const coursesButton = navList.querySelector("li.group > button");
+  const coursesButton = navList.querySelector("li.group > label");
   const dropdownLinks = navList.querySelectorAll<HTMLAnchorElement>("li.group div a");
 
   const activeDropdownLink = Array.from(dropdownLinks).find((link) => {
