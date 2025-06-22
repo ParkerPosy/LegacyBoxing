@@ -32,7 +32,10 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        courses: resolve(__dirname, 'pages/courses/index.html'),
+        boxing: resolve(__dirname, 'pages/courses/boxing/index.html'),
+        mma: resolve(__dirname, 'pages/courses/mma/index.html'),
+        youthPrograms: resolve(__dirname, 'pages/courses/youth-programs/index.html'),
+        privateTraining: resolve(__dirname, 'pages/courses/private-training/index.html'),
         membership: resolve(__dirname, 'pages/membership/index.html'),
         gallery: resolve(__dirname, 'pages/gallery/index.html'),
         contact: resolve(__dirname, 'pages/contact/index.html'),
