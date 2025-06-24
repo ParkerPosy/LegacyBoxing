@@ -2,11 +2,31 @@
 
 @theme {
   --color-boxing-red: #c40110;
-  --color-legacy-red: #6F1712;
+  --color-legacy-red: #6f1712;
 }
 
+/* inter-latin-100-normal */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 25% 150%;
+  src: url("/pages/fonts/Inter-VariableFont_opsz,wght.tff") format("tff");
+}
+
+/* inter-latin-200-normal */
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 25% 150%;
+  src: url("/pages/fonts/Inter-Italic-VariableFont_opsz,wght.tff") format("tff");
+}
+
+
+
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--color-slate-950);
   height: 100%;
   width: 100%;
