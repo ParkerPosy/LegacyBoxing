@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => ({
         mma: resolve(__dirname, 'pages/courses/mma/index.html'),
         youthPrograms: resolve(__dirname, 'pages/courses/youth-programs/index.html'),
         privateTraining: resolve(__dirname, 'pages/courses/private-training/index.html'),
+        schedule: resolve(__dirname, 'pages/courses/schedule/index.html'),
         membership: resolve(__dirname, 'pages/membership/index.html'),
         gallery: resolve(__dirname, 'pages/gallery/index.html'),
         contact: resolve(__dirname, 'pages/contact/index.html'),
