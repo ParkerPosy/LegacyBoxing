@@ -1,0 +1,112 @@
+<div class="py-10">
+  <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Page Heading -->
+    <div class="mb-16 text-center space-y-6">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-pretty">
+        <span class="text-white">Class Schedule</span>
+        <span class="block text-boxing-red mt-4">Legacy Boxing & Combat Sports Academy</span>
+      </h1>
+      <h2 class="text-xl sm:text-2xl text-slate-300 font-medium mt-2 text-balance">
+        View the weekly training schedule for boxing, MMA, youth classes, and private coaching.
+      </h2>
+      <p class="text-lg max-w-3xl mx-auto text-slate-400 text-balance">
+        Find the latest class times for group sessions and youth programs at Legacy. Updated regularly – perfect for new
+        members, parents, and returning athletes.
+      </p>
+    </div>
+
+    <!-- Schedule Table Placeholder -->
+    <div class="mb-20 bg-gray-800/50 border border-slate-700 rounded-xl shadow-lg p-8">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="h-10 w-1.5 bg-boxing-red rounded-full">
+        </div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Weekly Training Schedule</h2>
+      </div>
+      <div class="overflow-auto rounded-lg">
+        <load src="/pages/components/schedule.html" />
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="mt-16 flex justify-center">
+      <a
+        href="/pages/membership/"
+        class="flex items-center w-fit gap-2 bg-boxing-red hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full text-lg transition-transform hover:scale-105 shadow-lg shadow-red-900/50"
+      >
+        Join a Class This Week
+        <svg
+          viewBox="0 -960 960 960"
+          class="w-6 h-6 text-white"
+          fill="currentColor"
+        >
+          <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Explore Programs Section -->
+    <div class="mt-24">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="h-10 w-1.5 bg-boxing-red rounded-full"></div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Explore Our Training Programs</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-slate-300 text-lg">
+        <!-- Program Card -->
+        <a
+          href="/pages/courses/boxing/"
+          class="group bg-gray-800/50 border border-slate-700 rounded-xl p-6 flex flex-col justify-between hover:bg-boxing-red/40 transition-all shadow-md hover:shadow-lg"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-2">Boxing</h3>
+            <p>Structured classes for ages 16+. Build real skills with certified coaches. No experience needed.</p>
+          </div>
+          <span class="mt-4 inline-block text-boxing-red font-semibold group-hover:underline">
+            → Learn More
+          </span>
+        </a>
+
+        <a
+          href="/pages/courses/mma/"
+          class="group bg-gray-800/50 border border-slate-700 rounded-xl p-6 flex flex-col justify-between hover:bg-boxing-red/40 transition-all shadow-md hover:shadow-lg"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-white  mb-2">MMA</h3>
+            <p>Train in striking, grappling, and conditioning. A complete system for hobbyists and fighters alike.</p>
+          </div>
+          <span class="mt-4 inline-block text-boxing-red font-semibold group-hover:underline">
+            → Learn More
+          </span>
+        </a>
+
+        <a
+          href="/pages/courses/youth-programs/"
+          class="group bg-gray-800/50 border border-slate-700 rounded-xl p-6 flex flex-col justify-between hover:bg-boxing-red/40 transition-all shadow-md hover:shadow-lg"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-white  mb-2">Youth Boxing</h3>
+            <p>Boxing classes for ages 8–16. Safe, structured, and focused on confidence and discipline.</p>
+          </div>
+          <span class="mt-4 inline-block text-boxing-red font-semibold group-hover:underline">
+            → Learn More
+          </span>
+        </a>
+
+        <a
+          href="/pages/courses/private-training/"
+          class="group bg-gray-800/50 border border-slate-700 rounded-xl p-6 flex flex-col justify-between hover:bg-boxing-red/40 transition-all shadow-md hover:shadow-lg"
+        >
+          <div>
+            <h3 class="text-xl font-semibold text-white  mb-2">Private Training</h3>
+            <p>1-on-1 coaching with Coach Derek Roth. Personalized training for all skill levels and goals.</p>
+          </div>
+          <span class="mt-4 inline-block text-boxing-red font-semibold group-hover:underline">
+            → Learn More
+          </span>
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
