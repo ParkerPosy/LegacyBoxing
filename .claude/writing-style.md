@@ -280,8 +280,9 @@ Bios should be roughly equal length (~100-150 words) and maintain the same regis
 | Brand name | "Legacy Boxing & Combat Sports Academy" (full) or "Legacy" (short). Use "&" not "and" in brand name. |
 | Coach names | "Coach [First Name]" in running text; "Coach [First Last]" on first reference |
 | Numbers | Spell out one through nine; use numerals for 10+. Exception: prices, ages, years always numeric ($80, ages 8-16, 30+ years) |
-| Dashes | Em dash (—) with no spaces for parenthetical asides. Avoid spaced en dashes. |
-| Lists | Parallel structure — all items start with same part of speech (verb or noun) |
+| Dashes | En dash (–) for parenthetical asides and ranges. Use sparingly. Avoid em dashes (—). |
+| Apostrophes | Always use straight apostrophes (') in all text. Never use curly/smart apostrophes ('). |
+| Lists | Parallel structure – all items start with same part of speech (verb or noun) |
 | Prices | "$X.00" format with two decimal places on pricing pages; "$X" without decimals in running text |
 | Location | "State College, PA" in H1 tags and first reference; "State College" alone after |
 | Time | 12-hour format with AM/PM: "6:15–7:45 PM" using en dash between times |
