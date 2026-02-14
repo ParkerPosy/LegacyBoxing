@@ -75,6 +75,16 @@
       content="Visit Legacy Boxing at 2820 E College Ave, State College PA. Call (814) 599-1682 or drop in. Mon–Sat classes available. Your first class is free."
     />
     <load src="/pages/components/json-ld.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://www.legacy-boxing.com/pages/contact/" }
+        ]
+      }
+    </script>
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">

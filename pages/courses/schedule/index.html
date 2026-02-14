@@ -80,6 +80,16 @@
       content="See our Mon–Sat boxing, MMA, Muay Thai & youth class schedule at Legacy Boxing in State College, PA. Morning, evening & weekend sessions available."
     />
     <load src="/pages/components/json-ld.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Class Schedule", "item": "https://www.legacy-boxing.com/pages/courses/schedule/" }
+        ]
+      }
+    </script>
   </head>
 
   <body class="

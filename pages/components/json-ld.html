@@ -2,9 +2,9 @@
 {
   "@context": "https://schema.org",
   "@type": ["SportsActivityLocation", "ExerciseGym", "MartialArtsSchool"],
-  "name": "Legacy Boxing and Combat Sports Academy",
-  "alternateName": "Legacy Boxing & Combat Sports Academy",
-  "description": "Legacy Boxing & Combat Sports Academy is a premier MMA and boxing gym in State College, PA, serving Centre County and Penn State students. We offer structured classes in boxing, youth boxing (ages 8–16), and real mixed martial arts for adults and teens. Our MMA program combines striking, grappling, and conditioning with techniques from Muay Thai, Brazilian Jiu-Jitsu (BJJ), Judo, and kickboxing. All classes are led by USA Boxing-certified coaches, including the head coach of the Penn State Boxing Team. Private training is also available for beginners, athletes, and competitive fighters. Train with expert coaches and build real skills in a safe, supportive environment. Call or visit today to try your first class free.",
+  "name": "Legacy Boxing & Combat Sports Academy",
+  "alternateName": "Legacy Boxing and Combat Sports Academy",
+  "description": "Legacy Boxing & Combat Sports Academy is a premier MMA and boxing gym in State College, PA, serving Centre County and Penn State students. We offer structured classes in boxing, women's boxing, youth boxing (ages 8–16), and real mixed martial arts for adults and teens. Our MMA program is built on Kosen Judo grappling, Muay Thai striking, and boxing — a system that sets us apart from every other gym in the area. All classes are led by USA Boxing and USA Judo certified coaches, including the head coach of the Penn State Boxing Club. Private training is available for beginners, athletes, and competitive fighters. Call or visit today — your first class is free.",
   "image": "https://www.legacy-boxing.com/og-image.png",
   "logo": "https://www.legacy-boxing.com/legacy-boxing-logo.webp",
   "url": "https://www.legacy-boxing.com",
@@ -71,13 +71,34 @@
   "founder": {
     "@type": "Person",
     "name": "Derek Roth",
-    "jobTitle": "Head Coach",
-    "knowsAbout": ["Boxing", "MMA", "Muay Thai", "Judo", "Brazilian Jiu-Jitsu", "Kickboxing"],
+    "jobTitle": "Head Coach & Founder",
+    "knowsAbout": ["Boxing", "MMA", "Muay Thai", "Kosen Judo", "Judo", "Brazilian Jiu-Jitsu", "Kickboxing", "Wrestling"],
     "award": "2023 Pennsylvania USA Boxing Coach of the Year",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Certification",
+        "name": "USA Boxing Certified Coach"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Certification",
+        "name": "USA Judo Certified Instructor"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Belt Rank",
+        "name": "USA Judo Brown Belt"
+      }
+    ],
     "alumniOf": {
       "@type": "CollegeOrUniversity",
       "name": "Penn State University"
-    }
+    },
+    "memberOf": [
+      { "@type": "Organization", "name": "USA Boxing" },
+      { "@type": "Organization", "name": "USA Judo" }
+    ]
   },
   "amenityFeature": [
     { "@type": "LocationFeatureSpecification", "name": "Private Training Available", "value": true },
@@ -112,7 +133,7 @@
     {
       "@type": "Offer",
       "name": "MMA Membership",
-      "description": "Full access to MMA classes including Muay Thai, BJJ, Judo, kickboxing, and wrestling.",
+      "description": "Full access to MMA classes built on Kosen Judo grappling, Muay Thai striking, boxing, and wrestling. USA Judo certified coaching.",
       "price": "80.00",
       "priceCurrency": "USD"
     },
