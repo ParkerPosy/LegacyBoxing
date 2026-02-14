@@ -5,22 +5,24 @@
   --color-legacy-red: #6f1712;
 }
 
-/* inter-latin-100-normal */
+/* inter-variable-normal */
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 100;
+  font-weight: 100 900;
   font-stretch: 25% 150%;
-  src: url("/pages/fonts/Inter-VariableFont_opsz,wght.tff") format("tff");
+  font-display: swap;
+  src: url("/pages/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
-/* inter-latin-200-normal */
+/* inter-variable-italic */
 @font-face {
   font-family: "Inter";
   font-style: italic;
-  font-weight: 100;
+  font-weight: 100 900;
   font-stretch: 25% 150%;
-  src: url("/pages/fonts/Inter-Italic-VariableFont_opsz,wght.tff") format("tff");
+  font-display: swap;
+  src: url("/pages/fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
 }
 
 

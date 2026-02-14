@@ -34,11 +34,35 @@
     />
     <meta
       property="og:image"
-      content="https://www.legacy-boxing.com/legacy-boxing-logo.webp"
+      content="https://www.legacy-boxing.com/og-image.png"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Memberships | Legacy Boxing & Combat Sports Academy"
+    />
+    <meta
+      name="twitter:description"
+      content="Flexible boxing and MMA memberships for all ages and skill levels at our State College gym. Choose adult, youth, or private training options."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.legacy-boxing.com/og-image.png"
     />
     <meta
       name="keywords"
-      content="boxing, boxing gym, boxing for kids, boxing classes, mma, muay thai, brazilian jiu-jitsu, combat sports, wrestling, martial arts, state college, legacy boxing"
+      content="boxing membership, gym membership State College, boxing gym pricing, MMA membership, youth boxing plans, women's boxing membership, Legacy Boxing rates"
     />
     <link
       rel="icon"
@@ -50,14 +74,18 @@
       name="description"
       content="Flexible boxing and MMA memberships for all ages and skill levels at our State College gym. Choose adult, youth, or private training options."
     />
+    <load src="/pages/components/json-ld.html" />
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">
     <load src="/pages/components/header.html" />
 
-    <div class="mx-10 py-10">
+    <main
+      id="main-content"
+      class="mx-10 py-10"
+    >
       <load src="/pages/membership/membership.html" />
-    </div>
+    </main>
 
     <load src="/pages/components/footer.html" />
 

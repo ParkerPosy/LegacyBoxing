@@ -34,7 +34,31 @@
     />
     <meta
       property="og:image"
-      content="https://www.legacy-boxing.com/legacy-boxing-logo.webp"
+      content="https://www.legacy-boxing.com/og-image.png"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Legacy Boxing & Combat Sports Academy | Boxing & MMA Gym in State College"
+    />
+    <meta
+      name="twitter:description"
+      content="Boxing and MMA classes for adults and kids at our State College gym serving Centre County. Build real skill with certified coaches. First class is free."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.legacy-boxing.com/og-image.png"
     />
     <meta
       name="keywords"
@@ -50,6 +74,7 @@
       name="description"
       content="Boxing and MMA classes for adults and kids at our State College gym serving Centre County. Build real skill with certified coaches. First class is free."
     />
+    <load src="/pages/components/json-ld.html" />
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">
@@ -57,9 +82,12 @@
 
     <load src="/pages/components/banner.html" />
 
-    <div class="mx-10 py-10">
+    <main
+      id="main-content"
+      class="mx-10 py-10"
+    >
       <load src="/pages/main.html" />
-    </div>
+    </main>
 
     <load src="/pages/components/footer.html" />
 

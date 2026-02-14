@@ -13,6 +13,7 @@
     "gulp": "^5.0.0",
     "gulp-clone": "^2.0.1",
     "gulp-webp": "^5.0.0",
+    "sharp": "^0.34.5",
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
     "vite-plugin-html-inject": "^1.1.2",

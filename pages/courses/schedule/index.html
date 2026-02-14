@@ -37,7 +37,35 @@
     />
     <meta
       property="og:image"
-      content="https://www.legacy-boxing.com/legacy-boxing-logo.webp"
+      content="https://www.legacy-boxing.com/og-image.png"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Class Schedule | Legacy Boxing & Combat Sports Academy"
+    />
+    <meta
+      name="twitter:description"
+      content="View our updated boxing, MMA, and youth class schedule in State College. Find our session times and training options at Legacy Boxing."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.legacy-boxing.com/og-image.png"
+    />
+    <meta
+      name="keywords"
+      content="boxing class schedule, MMA schedule State College, gym hours, training times, youth boxing schedule, women's boxing class times, Legacy Boxing schedule"
     />
 
     <link
@@ -51,6 +79,7 @@
       name="description"
       content="View our updated boxing, MMA, and youth class schedule in State College. Find our session times and training options at Legacy Boxing."
     />
+    <load src="/pages/components/json-ld.html" />
   </head>
 
   <body class="
@@ -61,9 +90,12 @@
       min-h-screen">
     <load src="/pages/components/header.html" />
 
-    <div class="mx-5 py-10">
+    <main
+      id="main-content"
+      class="mx-5 py-10"
+    >
       <load src="/pages/courses/schedule/schedule.html" />
-    </div>
+    </main>
 
     <load src="/pages/components/footer.html" />
 

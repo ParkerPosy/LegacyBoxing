@@ -34,11 +34,35 @@
     />
     <meta
       property="og:image"
-      content="https://www.legacy-boxing.com/legacy-boxing-logo.webp"
+      content="https://www.legacy-boxing.com/og-image.png"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="en_US"
+    />
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Gallery | Legacy Boxing & Combat Sports Academy"
+    />
+    <meta
+      name="twitter:description"
+      content="See real boxing and MMA training in action at our State College gym. Explore photos of classes, coaches, and the athletes building their legacy."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.legacy-boxing.com/og-image.png"
     />
     <meta
       name="keywords"
-      content="boxing, boxing gym, boxing for kids, boxing classes, mma, muay thai, brazilian jiu-jitsu, combat sports, wrestling, martial arts, state college, legacy boxing"
+      content="boxing gym photos, MMA training gallery, youth boxing photos, Legacy Boxing gallery, combat sports videos, State College gym photos"
     />
     <link
       rel="icon"
@@ -50,14 +74,18 @@
       name="description"
       content="See real boxing and MMA training in action at our State College gym. Explore photos of classes, coaches, and the athletes building their legacy."
     />
+    <load src="/pages/components/json-ld.html" />
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">
     <load src="/pages/components/header.html" />
 
-    <div class="mx-10 py-10">
+    <main
+      id="main-content"
+      class="mx-10 py-10"
+    >
       <load src="/pages/gallery/gallery.html" />
-    </div>
+    </main>
 
     <load src="/pages/components/footer.html" />
 
