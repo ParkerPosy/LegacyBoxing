@@ -32,22 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const coursesButton = navList.querySelector("li.group > label");
-  const dropdownLinks = navList.querySelectorAll<HTMLAnchorElement>("li.group div a");
+  // Handle all dropdown groups (Courses and More)
+  const dropdownGroups = navList.querySelectorAll<HTMLElement>("li.group");
+  dropdownGroups.forEach((group) => {
+    const groupLabel = group.querySelector("label");
+    const groupLinks = group.querySelectorAll<HTMLAnchorElement>("div a");
 
-  const activeDropdownLink = Array.from(dropdownLinks).find((link) => {
-    const linkPath = new URL(link.href).pathname;
-    // Check if the link is a course page and matches the current path
-    return linkPath.startsWith("/pages/courses/") && linkPath === currentPath;
-  });
+    const activeLink = Array.from(groupLinks).find((link) => {
+      const linkPath = new URL(link.href).pathname;
+      return linkPath !== "/" && currentPath.startsWith(linkPath);
+    });
 
-  if (activeDropdownLink) {
-    // Highlight the specific active course link in the dropdown
-    activeDropdownLink.classList.add("underline", "text-boxing-red");
-
-    // Also highlight the main "Courses" button
-    if (coursesButton) {
-      coursesButton.classList.add("text-boxing-red");
+    if (activeLink) {
+      activeLink.classList.add("underline", "text-boxing-red");
+      if (groupLabel) {
+        groupLabel.classList.add("text-boxing-red");
+      }
     }
-  }
+  });
 });

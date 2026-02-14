@@ -40,6 +40,9 @@ export default defineConfig(({ mode }) => ({
         membership: resolve(__dirname, 'pages/membership/index.html'),
         gallery: resolve(__dirname, 'pages/gallery/index.html'),
         contact: resolve(__dirname, 'pages/contact/index.html'),
+        keystoneGames: resolve(__dirname, 'pages/events/keystone-games/index.html'),
+        articles: resolve(__dirname, 'pages/articles/index.html'),
+        articleKeystoneGames: resolve(__dirname, 'pages/articles/legacy-boxing-hosts-keystone-games-2026/index.html'),
       },
       output: {
         manualChunks(id) {
