@@ -1,33 +1,73 @@
-# Legacy Boxing — Marketing Strategy
+# Legacy Boxing — Marketing Dominance Strategy
 
 > Last updated: 2026-02-14
+> Data source: 6 months Google Search Console (Aug 2025 – Feb 2026)
+
+---
+
+## Mission Statement
+
+**Own combat sports in State College and central Pennsylvania.** Every person searching for boxing, MMA, judo, kickboxing, or self-defense in our market should find Legacy Boxing first, click first, and convert.
+
+---
 
 ## Business Overview
 
-**Legacy Boxing & Combat Sports Academy** is a combat sports gym in **State College, PA** offering boxing, MMA, youth programs, and private training. Head coach is **Anthony "Coach" Roth** — a Penn State alum, USA Boxing certified coach, 2023 PA Coach of the Year, and USA Judo brown belt.
+**Legacy Boxing & Combat Sports Academy** is a combat sports gym in **State College, PA** offering boxing, MMA (built on Kosen Judo grappling), youth programs, women's boxing, and private training. Head coach is **Derek "Coach" Roth** — Penn State alum, USA Boxing certified coach, 2023 PA State Coach of the Year, USA Judo brown belt, and **USA Judo certified instructor**.
 
-### Revenue Model (from current pricing page)
+### Core Disciplines
 
-| Program | Monthly Price |
-|---------|--------------|
-| Boxing | $80/mo |
-| MMA | $80/mo |
-| Youth Boxing | $60/mo |
-| Boxing + MMA Combo | $125/mo |
-| Private Training | $70/hr |
-| Facility Rental | $100/hr |
+| Discipline | Strategic Role | Search Volume (6mo) |
+|------------|---------------|---------------------|
+| **Boxing** | Anchor program — already #1-2 for "boxing state college" and "boxing near me". Revenue backbone. | ~891 impressions across boxing cluster |
+| **Kosen Judo** | **Primary differentiator.** Rare ground-focused judo discipline almost no US gym teaches. Captures judo + BJJ + grappling queries that normally go to separate gyms. Coach Roth's USA Judo certification gives E-E-A-T authority. | ~266 impressions (judo/BJJ/grappling cluster) — currently served by ZERO pages |
+| **MMA** | Highest-impression subpage (4,639). Packages boxing striking + Kosen Judo grappling + Muay Thai into a complete system. The Kosen Judo grappling base is what makes our MMA program different from every other MMA gym. | ~700 impressions across MMA cluster |
+| **Muay Thai / Kickboxing** | Striking complement within MMA. Currently ranking #2 for "kickboxing" with no dedicated content. | ~152 impressions — ZERO landing pages |
+| **Women's Boxing** | Dedicated women's classes. Low search volume but high-intent, low-competition, fast-growing fitness category. | ~11 impressions — ZERO landing pages |
+| **Youth Programs** | Ages 5–17. Already best-performing subpage by CTR (1.18%). Parents are a reliable conversion segment. | ~76 impressions |
 
-First class is free for all programs.
+### Revenue Model
+
+| Program | Monthly Price | Search-Backed Priority |
+|---------|--------------|------------------------|
+| Boxing | $80/mo | Core — highest click volume |
+| MMA | $80/mo | Highest impression volume, needs CTR fix |
+| Youth Boxing | $60/mo | Best subpage CTR, reliable conversions |
+| Boxing + MMA Combo | $125/mo | Highest ARPU — upsell target |
+| Private Training | $70/hr | Best-performing subpage by clicks |
+| Facility Rental | $100/hr | Low priority — no search demand |
+
+First class is free for all programs — this is our #1 conversion hook and should appear in EVERY meta description.
+
+### Competitive Landscape
+
+**Direct Competitors (State College area):**
+- Generic fitness gyms (Planet Fitness, CrossFit, etc.) — they don't teach combat sports
+- Penn State club sports (boxing club, MMA club) — free but inconsistent, no coaching credentials
+- No other dedicated boxing/MMA gym in State College with comparable coaching credentials
+
+**Our Moats (things competitors cannot replicate):**
+
+1. **Kosen Judo instruction** — Almost no gym in the US teaches Kosen Judo. This is a ground-focused judo style emphasizing newaza (submissions, pins, guard work) that bridges judo and BJJ. Coach Roth's USA Judo brown belt and USA Judo instructor certification make this authentic, not aspirational. Search data proves demand: we already rank on page 1 for "judo" (pos 6.28) and "judo near me" (pos 5.19) with ZERO content.
+
+2. **Coach credentials stack** — USA Boxing certified + 2023 PA Coach of the Year + USA Judo brown belt + USA Judo certified instructor + Penn State alum. No competitor in this market has this combination.
+
+3. **Full combat sports spectrum** — Boxing, Kosen Judo, MMA, Muay Thai, Youth, Women's, Private Training all under one roof with one certified coach. Competitors offer pieces, never the whole picture.
+
+4. **Penn State proximity + alumni connection** — Bo Nickal training photos, campus-adjacent location, student-friendly pricing. Penn State queries generate 374 impressions with ZERO clicks because no content exists.
+
+5. **Local SEO dominance** — Already #1-2 for core boxing queries. Foundation is built. Now we expand into every adjacent query cluster.
 
 ---
 
 ## Current Marketing Channels
 
 ### Website (`www.legacy-boxing.com`)
-- Primary marketing asset
-- 9 pages: Home, 5 courses, Membership, Gallery, Contact
-- Google Analytics tracking active
-- Auto-generated sitemap
+- Primary marketing asset — 9 pages currently, expanding to 14-17
+- Already ranks #1-2 for core local boxing queries
+- Google Analytics tracking active (G-9LQ8HHZE9B)
+- Sitemap auto-generated
+- 1,258 clicks over 6 months (~7/day), growing
 
 ### Social Media
 - **Instagram** — primary social channel (embedded feed on contact page, CTA in footer)
@@ -36,76 +76,32 @@ First class is free for all programs.
 ### Google
 - Google Maps embed on contact and homepage
 - Google Analytics active
-- Sitemap auto-generated
-- No visible Google Business Profile link (should be claimed/optimized)
+- JSON-LD structured data on all pages (SportsActivityLocation + ExerciseGym + MartialArtsSchool)
+- Google Business Profile active — needs optimization
 
 ---
 
-## Target Audiences
+## Target Audiences — Ranked by Search Data
 
-### Primary Segments
+### Primary Segments (proven demand)
 
-| Segment | Description | Key Messages |
-|---------|-------------|--------------|
-| **Adult Beginners** | Adults new to boxing/MMA, seeking fitness + self-defense | "No experience needed", "First class free", expert coaching |
-| **Youth Parents** | Parents of kids 6–17, seeking discipline + activity | Safety, character development, bullying defense, fun |
-| **Women** | Women seeking empowerment + fitness through boxing | Dedicated women's boxing classes, supportive environment |
-| **Competitive Athletes** | Experienced fighters seeking competition training | Coach Roth's credentials, competition record, USA Boxing affiliation |
-| **Fitness Enthusiasts** | People tired of traditional gyms | Full-body workout, community, stress relief |
-| **Penn State Community** | Students and alumni in State College | Bo Nickal connection, campus proximity, affordable pricing |
+| Segment | Search Evidence | Key Messages | Conversion Path |
+|---------|----------------|--------------|------------------|
+| **Adult Beginners** | "beginner boxing classes near me" (17 imp @ pos 39!), "boxing classes near me for beginners" | "No experience needed", "First class free", expert coaching | Boxing page → Contact |
+| **Penn State Students** | 374 impressions across Penn State queries — **0 clicks** (no content!) | Campus proximity, student-affordable pricing ($60-80/mo), Bo Nickal connection | Penn State page (NEW) → Membership |
+| **MMA / Grappling Seekers** | 700 MMA + 266 grappling = **~966 impressions** — our biggest query cluster after boxing | "Only Kosen Judo gym in central PA", complete MMA system, ground game mastery | MMA page → Kosen Judo page → Membership |
+| **Youth Parents** | 76 impressions, best subpage CTR (1.18%) | Safety, discipline, character, ages 5-17, affordable ($60/mo) | Youth page → Schedule → Contact |
+| **Women** | ~11 impressions but growing fast nationally; low competition | Dedicated women's classes, empowerment, supportive environment | Women's Boxing page (NEW) → Contact |
+| **Competitive Athletes** | "boxing gyms near me with sparring" (2 imp @ pos 1.5!), "amateur boxing near me" (6 imp) | Coach Roth's credentials, USA Boxing competition prep, Kosen Judo edge | Boxing page → Private Training → Membership |
+| **Kickboxing / Muay Thai Seekers** | 152 impressions — ranking **#2 for "kickboxing"** with no content | Muay Thai striking within MMA system, cardio kickboxing options | Kickboxing page (NEW) → Membership |
 
 ### Secondary Segments
 
-| Segment | Description |
-|---------|-------------|
-| **Corporate/Team Building** | Facility rental for group events |
-| **Summer Parents** | Youth summer camp attendees (seasonal) |
-
----
-
-## Content Strategy
-
-### Website Content Pillars
-
-1. **Credibility** — Coach Roth's credentials, competition photos, team achievements
-2. **Programs** — Detailed course descriptions with schedules and expectations
-3. **Community** — Gallery, testimonials, team photos
-4. **Accessibility** — "First class free", beginner-friendly messaging, clear pricing
-
-### Content Gaps — Pages to Add
-
-| Page | Priority | SEO Value | Purpose |
-|------|----------|-----------|---------|
-| **Blog / News** | High | Very High | Long-tail keyword traffic, freshness signals, shareable content |
-| **About / Our Story** | High | High | Coach bios expanded, gym history, mission statement |
-| **FAQ** | High | High | Catch long-tail searches, FAQ rich results |
-| **Testimonials** | Medium | Medium | Social proof, trust building |
-| **Events** | Medium | Medium | Competitions, open houses, seasonal camps |
-| **Judo** | Medium | Medium | USA Judo logo in assets suggests a judo program exists or is planned |
-| **Facility / Virtual Tour** | Low | Medium | Show the space, reduce sign-up anxiety |
-| **Careers / Volunteer** | Low | Low | Community engagement |
-
-### Blog Content Ideas (by audience)
-
-**Beginners:**
-- "What to Expect at Your First Boxing Class"
-- "5 Reasons Boxing is the Best Full-Body Workout"
-- "Boxing vs. MMA: Which Is Right for You?"
-
-**Parents:**
-- "How Boxing Builds Confidence in Kids"
-- "Why Combat Sports Are Safer Than You Think"
-- "What Parents Need to Know About Youth Boxing"
-
-**Fitness:**
-- "Boxing Conditioning Workouts You Can Do at Home"
-- "How Boxing Helps With Stress and Mental Health"
-- "The Physical Benefits of MMA Training"
-
-**Local:**
-- "Best Fitness Activities in State College, PA"
-- "Why Penn State Athletes Train at Legacy Boxing"
-- Competition recaps and results
+| Segment | Search Evidence | Potential |
+|---------|----------------|----------|
+| **Self-Defense Seekers** | 30 impressions ("self defense classes near me") | Broad appeal, entry point for non-combat-sports audience |
+| **Corporate/Team Building** | No search evidence | Low priority, pursue through outbound only |
+| **Judo Purists** | "judo" (32 imp @ pos 6.28), "judo near me" (16 imp @ pos 5.19) | Kosen Judo page captures these + positions us as a niche authority |
 
 ---
 
@@ -114,99 +110,148 @@ First class is free for all programs.
 ### Current Conversion Paths
 
 ```
-Homepage → Course Page → Contact / Membership
+Organic Search → Homepage (93% of clicks) → Course Page → Contact / Membership
+Organic Search → Course Page (7% of clicks) → Membership / Contact
 Gallery → Contact
 Any Page → Contact (via footer phone/email)
 ```
 
+### Critical Fixes
+
+1. **Every page meta description must include "First Class Free"** — This is the #1 conversion hook and should appear in every SERP snippet
+2. **Every page meta description must include "State College"** — Disambiguates from other Legacy gyms immediately in the SERP
+3. **Membership page needs pricing in SERP** — "from $60/mo" in the description pre-qualifies searchers
+4. **Contact page needs value prop, not just info** — Current SERP snippet gives no reason to click
+5. **Add contact form** — Currently phone + email + Instagram only. No web form.
+
 ### CTA Strategy
 
 **Primary CTAs (already implemented):**
-- "Start Your Free Class" (red pill button, links to contact)
+- "Start Your Free Class" (red pill button → contact)
 - "View Membership Options" (white pill button)
 - "View Full Schedule"
 
-**Missing CTAs / Improvements:**
-- No online booking or class registration
-- No email capture / newsletter signup
-- No SMS opt-in
-- Contact page has no form — only phone + email + Instagram embed
-- No WhatsApp or chat widget
-
-### Recommended Conversion Funnel
-
-```
-Awareness (SEO/Social) → Landing Page → Free Class CTA → Contact Form → Trial Visit → Membership
-```
+**Missing / Needed:**
+- Contact form on contact page
+- Email capture for class reminders
+- SMS opt-in for schedule updates
 
 ---
 
 ## Social Media Strategy
 
 ### Instagram (Current Primary)
-- Continue posting training videos, class photos, competition results
-- Use Stories for daily gym content
-- Reels for technique tips (high reach potential)
-- Highlight covers: Classes, Schedule, Coaches, Reviews
+- Training videos featuring Kosen Judo groundwork (unique content no other local gym can post)
+- Boxing technique shorts, sparring highlights
+- Youth program wins and belt ceremonies
+- Competition results
+- Reels: Kosen Judo technique tips, "what is kosen judo?" explainer, coach credential showcases
+- Tag location: State College, PA on every post (brand disambiguation)
 
-### Untapped Channels
+### TikTok (Highest Untapped Potential)
+- Combat sports content gets massive organic reach
+- Kosen Judo demonstrations (extremely rare content = algorithm boost for novelty)
+- "Day at Legacy Boxing" walk-throughs
+- Student transformation stories
+- Cross-post from Instagram Reels
 
-| Channel | Opportunity | Content Type |
-|---------|------------|--------------|
-| **TikTok** | Very High — combat sports content performs well | Short technique videos, training montages, transformations |
-| **YouTube** | High — long-form training content | Full technique tutorials, coach interviews, day-in-the-life |
-| **Facebook** | Medium — parent demographic | Event announcements, community posts, local group engagement |
-| **Google Business Profile** | Critical — local search | Photos, reviews, posts, Q&A |
+### YouTube (Authority Builder)
+- Full Kosen Judo technique tutorials (national audience, builds domain authority)
+- "What is Kosen Judo?" evergreen explainer
+- Coach Derek Roth breakdowns of fights/techniques
+- Links back to website in descriptions = referral traffic + SEO signal
+
+### Google Business Profile (Critical for Local SEO)
+- Weekly GBP posts (promotions, photos, events)
+- Respond to all reviews
+- Upload new photos monthly
+- Keep hours, services, and attributes current
+- Request reviews from every trial class attendee
+
+### Facebook (Parent Demographics)
+- Event announcements (open houses, youth camps)
+- Parent testimonials
+- Community group engagement (State College parents, Penn State groups)
 
 ---
 
 ## Local Marketing
 
 ### Digital
-- Google Business Profile optimization (hours, photos, posts, Q&A, reviews)
-- Local directory listings (Yelp, Yellow Pages, Nextdoor)
-- Penn State student organization partnerships
-- Local news features / press releases for events
-- Facebook local groups engagement
+- **Google Business Profile optimization** — #1 priority for local pack ranking. Photos, reviews, weekly posts, Q&A.
+- Local directory listings (Yelp, Yellow Pages, Nextdoor) — consistent NAP everywhere
+- Penn State student organization partnerships (boxing club, MMA club, fitness groups)
+- Local news features for events / Coach Roth achievements
+- Facebook local groups engagement (State College, Centre County, Penn State)
 
 ### Physical
-- Referral program (discount for bringing a friend)
-- Flyers at Penn State campus, local gyms, community boards
+- Referral incentive program (discount or free session for referrals)
+- Flyers at Penn State campus, coffee shops, community boards
 - Event sponsorship (local competitions, charity events)
-- Open house events
+- Quarterly open house events (free trial day)
+- Penn State club fair attendance each semester
+
+### Brand Disambiguation (Critical)
+
+Because "Legacy Boxing" is shared by multiple gyms nationally:
+- **Always include "State College" in branding** — "Legacy Boxing State College" in title tags, social bios, directory listings
+- **Use full name when space allows** — "Legacy Boxing & Combat Sports Academy" differentiates from "Legacy Boxing Club" (NJ) and "Legacy Boxing & Fitness" (other LLCs)
+- **JSON-LD and schema** already disambiguate for Google (done)
+- **This is not fixable** — it's a shared name. Lean into location-qualifying every surface.
 
 ---
 
 ## Competitive Positioning
 
-### Unique Selling Points
+### Unique Selling Points (Sharpened)
 
-1. **Coach credentials** — USA Boxing 2023 PA Coach of the Year, Penn State alum, USA Judo brown belt
-2. **First class free** — low-barrier trial
-3. **Affordable pricing** — $60–125/mo range
-4. **Comprehensive programs** — Boxing, MMA, Youth, Private, and (potentially) Judo
-5. **Penn State connection** — Bo Nickal training photos, campus community
-6. **Women's program** — dedicated women's boxing classes
-7. **Small gym feel** — personal attention vs. big box gyms
+1. **Only Kosen Judo gym in central PA** — No one else teaches this. It's the grappling foundation of our MMA program. Authentic credentials (USA Judo certified instructor, USA Judo brown belt). This alone makes us uncopyable.
+2. **Most credentialed coach in the market** — USA Boxing 2023 PA State Coach of the Year + USA Judo brown belt + USA Judo certified instructor + Penn State alum. No gym in State College stacks credentials like this.
+3. **Complete combat sports under one roof** — Boxing + Kosen Judo + MMA + Muay Thai + Women's Boxing + Youth. Competitors offer fragments. We offer the full spectrum.
+4. **First class free, no contracts** — Zero-risk trial. $60-125/mo. Lowest barrier to entry in the market.
+5. **Penn State's combat sports gym** — Campus-adjacent, student-affordable, Bo Nickal connection. The gym Penn State athletes use.
 
 ### Messaging Hierarchy
 
-1. **"Build Your Legacy"** — brand tagline (used on contact page hero)
-2. **Expert coaching** — credentials and experience
-3. **Community** — team photos, testimonials, gallery
-4. **Accessibility** — first class free, all skill levels
-5. **Results** — competition wins, transformations
+| Priority | Message | Where It Appears |
+|----------|---------|------------------|
+| 1 | **"Train With Purpose. Build Your Legacy."** | Homepage hero, social bios |
+| 2 | **"The only Kosen Judo gym in central PA"** | MMA page, Judo page, About page |
+| 3 | **"First class free — all levels welcome"** | Every meta description, every CTA |
+| 4 | **Coach Roth's credential stack** | About page, MMA page, homepage |
+| 5 | **"State College's combat sports home"** | Title tags, homepage, local content |
 
 ---
 
-## KPIs to Track
+## KPIs — Dominance Metrics
+
+### Search Dominance (Primary)
+
+| Metric | Current | 3-Month Target | 6-Month Target | Tool |
+|--------|---------|----------------|----------------|------|
+| Total organic clicks/day | ~8 | 15 | 25 | GSC |
+| "Near me" queries in top 3 | 5/10 | 8/10 | 10/10 | GSC |
+| Indexed pages | 9 | 14 | 17+ | GSC |
+| MMA page CTR | 0.45% | 3% | 5% | GSC |
+| "Kosen judo" queries — top 3 | 0 (no page) | 5+ queries | 10+ queries | GSC |
+| "Judo near me" position | 5.19 (no page!) | #1 | #1 | GSC |
+| Penn State cluster clicks | 0 | 10+/mo | 30+/mo | GSC |
+| Homepage CTR (target queries) | ~8-10% | 15% | 20% | GSC |
+
+### Conversion (Secondary)
 
 | Metric | Tool | Target |
 |--------|------|--------|
-| Organic search traffic | Google Analytics | ↑ 20% quarter-over-quarter |
-| "Boxing State College" ranking | Google Search Console | Top 3 |
-| Contact page visits | Google Analytics | Conversion tracking |
+| Contact page visits / organic session | Google Analytics | Track — set up goal |
+| Membership page visits / organic session | Google Analytics | Track — set up goal |
+| Phone calls from website | Call tracking (if added) | Track |
+| "First class free" conversions | Manual tracking | Track |
+
+### Brand & Social (Tertiary)
+
+| Metric | Tool | Target |
+|--------|------|--------|
 | Instagram follower growth | Instagram Insights | Track monthly |
 | Google Business Profile views | GBP Dashboard | ↑ with regular posting |
 | Core Web Vitals | PageSpeed Insights | All "Good" scores |
-| Bounce rate | Google Analytics | < 50% |
+| Google reviews count + rating | GBP | ↑ review solicitation |
