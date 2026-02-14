@@ -66,7 +66,8 @@ LegacyBoxing/
 │
 └── public/                       # Static assets (copied as-is to dist)
     ├── favicon.ico
-    ├── legacy-boxing-logo.webp
+    ├── legacy-boxing-logo.svg    # Vector logo (on-page display)
+    ├── legacy-boxing-logo.webp   # Raster logo (OG image, JSON-LD schema)
     ├── *.jpg / *.png / *.webp    # Photos and logos
     └── *.mp4                     # Videos
 ```
