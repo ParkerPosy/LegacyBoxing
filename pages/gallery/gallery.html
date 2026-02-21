@@ -2,55 +2,80 @@
   <div class="container mx-auto max-w-4xl">
     <div class="flex items-center gap-4 mb-6">
       <div class="h-10 w-1.5 bg-boxing-red rounded-full"></div>
-      <h2 class="text-3xl md:text-4xl font-bold">Photo Gallery</h2>
+      <h2 class="text-3xl md:text-4xl font-bold">Photo & Video Gallery</h2>
     </div>
 
-    <p class="text-lg text-slate-300 mb-8 max-w-3xl">
+    <p class="text-lg text-slate-300 mb-10 max-w-3xl">
       From sparring sessions and youth classes to competition wins and open gym days – here's a look inside Legacy
       Boxing & Combat Sports Academy in State College, PA.
     </p>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <!-- Gallery images -->
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-3">
+
+      <!-- 1. Coach Roth on the ropes — square, strong opener -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
           src="/legacy-boxing_coach-derek-roth-penn-state-boxer-corner-ropes.jpg"
-          fetchpriority="high"
+          width="395"
+          height="395"
           alt="Coach Derek Roth on the ropes with a Penn State boxer"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 2. Mitt & body pad training — portrait, training action -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
           src="/legacy-boxing_mitt-and-body-pad-training-session.jpg"
-          fetchpriority="high"
+          width="750"
+          height="1000"
           alt="Mitt and body pad training session at Legacy Boxing"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 3. Youth boxer competition victory — landscape, energy -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_youth-boxer-competition-victory.jpg"
+          width="1500"
+          height="847"
+          alt="Legacy Boxing youth boxer celebrating a competition victory"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+        >
+      </div>
+
+      <!-- 4. Cornering a boxer during a fight — portrait -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
           src="/legacy-boxing_coach-derek-roth-cornering-boxer-during-fight.jpg"
-          fetchpriority="high"
+          width="750"
+          height="1125"
           alt="Coach Derek Roth cornering a boxer during a fight"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 5. Kids boxing class — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing_coach-derek-roth-young-body-pad-training.jpg"
-          fetchpriority="high"
-          alt="Young Coach Derek Roth training with a body pad"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing-combat-sports-academy_kids-boxing-class-photo.jpg"
+          width="1080"
+          height="814"
+          alt="Kids boxing class photo at Legacy Boxing & Combat Sports Academy"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
         >
       </div>
-      <div class="overflow-hidden max-h-64 rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 6. Entry video -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <video
           autoplay
           loop
           muted
+          playsinline
           controls
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto"
         >
           <source
             src="/entry-video.mp4"
@@ -59,21 +84,82 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 7. MMA cage fight victory — near-square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing-combat-sports-academy_kids-boxing-class-photo.jpg"
-          fetchpriority="high"
-          alt="Class photo of the Legacy Boxing kids boxing class"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing_coach-derek-roth-mma-cage-fight-victory.png"
+          width="1062"
+          height="965"
+          alt="Coach Derek Roth winning an MMA cage fight"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden max-h-64 rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 8. Youth boxer carrying training dummy — portrait -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_youth-boxer-carrying-training-dummy.jpg"
+          width="750"
+          height="1000"
+          alt="Legacy Boxing youth boxer carrying a 70-pound training dummy"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 9. Penn State boxer belt photoshoot — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_penn-state-boxer-belt-photoshoot-with-coach-roth.jpg"
+          width="1500"
+          height="999"
+          alt="Penn State boxer belt photoshoot with Coach Derek Roth"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 10. Young Coach Roth body pad training — landscape throwback -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_coach-derek-roth-young-body-pad-training.jpg"
+          width="720"
+          height="480"
+          alt="Young Coach Derek Roth training with a body pad"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 11. Youth training session with women coach — tall portrait -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing-combat-sports-academy_youth-training-session-women-coach.jpg"
+          width="3024"
+          height="4032"
+          alt="Youth training session with a women coach at Legacy Boxing"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 12. Advertising video -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <video
           autoplay
           loop
           muted
+          playsinline
           controls
-          class="w-full max-h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto"
+          loading="lazy"
         >
           <source
             src="/advertising-video.mp4"
@@ -82,45 +168,82 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 13. 2023 NCBA Coach of the Year — portrait -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing_youth-boxer-competition-victory.jpg"
-          fetchpriority="high"
-          alt="Legacy Boxing youth boxer celebrating a competition victory"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing_coach-derek-roth-2023-ncba-coach-of-the-year-award.jpg"
+          width="750"
+          height="1000"
+          alt="Coach Derek Roth receiving the 2023 NCBA Coach of the Year award"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 14. Battle ropes training — wide landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing_coach-derek-roth-mma-cage-fight-victory.png"
-          fetchpriority="high"
-          alt="Coach Derek Roth winning an MMA cage fight"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing_battle-ropes-intense-training-session.jpg"
+          width="1500"
+          height="844"
+          alt="Intense battle ropes training session at Legacy Boxing"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 15. Team group photo — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing_penn-state-boxer-belt-photoshoot-with-coach-roth.jpg"
-          fetchpriority="high"
-          alt="Penn State boxer belt photoshoot with Coach Derek Roth"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing-combat-sports-academy_team-group-photo.jpg"
+          width="1500"
+          height="1125"
+          alt="Team group photo of Legacy Boxing & Combat Sports Academy"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 16. Kid boxer medal with Coach Roth — near-square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
-          src="/legacy-boxing-combat-sports-academy_youth-training-session-women-coach.jpg"
-          fetchpriority="high"
-          alt="Class photo of the Legacy Boxing kids class with a woman coach"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          src="/legacy-boxing_kid-boxer-competition-win-medal-with-coach-roth.jpg"
+          width="621"
+          height="548"
+          alt="Kid boxer with competition medal alongside Coach Derek Roth"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden max-h-64 rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 17. Cross punch form demonstration — square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_coach-derek-roth-cross-punch-form-demonstration.jpg"
+          width="395"
+          height="395"
+          alt="Coach Derek Roth demonstrating cross punch form in the ring"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 18. Boxing conditioning workout video -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <video
           autoplay
           loop
           muted
+          playsinline
           controls
-          class="w-full max-h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto"
+          loading="lazy"
         >
           <source
             src="/legacy-boxing-combat-sports-academy_anthony-coach-roth-boxing-conditioning-workout.mp4"
@@ -129,57 +252,56 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_coach-derek-roth-2023-ncba-coach-of-the-year-award.jpg"
-          fetchpriority="high"
-          alt="Coach Derek Roth receiving the 2023 NCBA Coach of the Year award"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_kid-boxer-competition-win-medal-with-coach-roth.jpg"
-          fetchpriority="high"
-          alt="Kid boxer winning a competition"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_coach-derek-roth-fun-pose-with-friend.jpg"
-          alt="Coach Derek Roth striking a fun pose with a friend"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing-combat-sports-academy_team-group-photo.jpg"
-          alt="Team group photo of Legacy Boxing & Combat Sports Academy"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_youth-boxer-training-in-ring.jpg"
-          alt="Youth boxer training in the ring at Legacy Boxing"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 19. Adult boxing class — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
           src="/legacy-boxing-combat-sports-academy_adult-boxing-class-photo.jpg"
+          width="1080"
+          height="810"
           alt="Adult boxing class at Legacy Boxing & Combat Sports Academy"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden max-h-64 rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 20. Coach Roth with team in Legacy shirts — tall portrait -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_coach-roth-team-boxers-legacy-shirts-medal.jpg"
+          width="1440"
+          height="1800"
+          alt="Coach Roth with team boxers in Legacy shirts, one holding a competition medal"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 21. Championship belt win — square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_penn-state-boxer-championship-belt-win.jpg"
+          width="395"
+          height="395"
+          alt="Penn State boxer showing off his championship belt"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 22. Advertising video 3 -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <video
           autoplay
           loop
           muted
+          playsinline
           controls
-          class="w-full max-h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto"
+          loading="lazy"
         >
           <source
             src="/advertising-video3.mp4"
@@ -188,41 +310,69 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_battle-ropes-intense-training-session.jpg"
-          alt="Intense battle ropes training session at Legacy Boxing"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_penn-state-boxer-championship-belt-win.jpg"
-          alt="Penn State boxer showing off his championship belt"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_coach-roth-team-boxers-legacy-shirts-medal.jpg"
-          alt="Coach Roth with team boxers in Legacy shirts, one holding a competition medal"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 23. Kid boxer winning competition — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <img
           src="/legacy-boxing_kid-boxer-winning-competition.jpg"
+          width="3024"
+          height="2061"
           alt="Legacy Boxing kid boxer winning a competition"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
         >
       </div>
-      <div class="overflow-hidden max-h-64 rounded-lg shadow-lg shadow-black hover:shadow-xl">
+
+      <!-- 24. Fun pose with friend — square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_coach-derek-roth-fun-pose-with-friend.jpg"
+          width="395"
+          height="395"
+          alt="Coach Derek Roth striking a fun pose with a friend"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 25. Youth boxer training in ring — landscape -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_youth-boxer-training-in-ring.jpg"
+          width="1500"
+          height="1125"
+          alt="Youth boxer training in the ring at Legacy Boxing"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 26. Coach Roth & Coach Mark award — square -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
+        <img
+          src="/legacy-boxing_coach-roth-and-coach-mark-coach-of-year-award.jpg"
+          width="395"
+          height="395"
+          alt="Coach Derek Roth and Coach Mark with Coach of the Year award"
+          class="w-full h-auto hover:scale-105 transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- 27. Advertising video 2 -->
+      <div class="break-inside-avoid mb-3 overflow-hidden rounded-lg shadow-md shadow-black/50">
         <video
           autoplay
           loop
           muted
+          playsinline
           controls
-          class="w-full max-h-64 object-cover hover:scale-105 transition-transform duration-300"
+          class="w-full h-auto"
+          loading="lazy"
         >
           <source
             src="/advertising-video2.mp4"
@@ -231,31 +381,18 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_coach-derek-roth-cross-punch-form-demonstration.jpg"
-          alt="Coach Derek Roth demonstrating cross punch form in the ring"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_coach-roth-and-coach-mark-coach-of-year-award.jpg"
-          alt="Coach Derek Roth and Coach Mark with Coach of the Year award"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
-      <div class="overflow-hidden rounded-lg shadow-lg shadow-black hover:shadow-xl">
-        <img
-          src="/legacy-boxing_youth-boxer-carrying-training-dummy.jpg"
-          alt="Legacy Boxing youth boxer carrying a 70-pound training dummy"
-          class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-        >
-      </div>
+
     </div>
-    <div class="mt-6 text-center">
-      <p class="text-slate-400">A glimpse into our training sessions at Legacy Boxing & Combat
-        Sports Academy. Stop by today for your <span class="underline">free</span> first class.</p>
+
+    <div class="mt-8 text-center">
+      <p class="text-slate-400 mb-4">A glimpse into our training sessions at Legacy Boxing & Combat
+        Sports Academy in State College, PA.</p>
+      <a
+        href="/contact"
+        class="inline-block border border-white/30 text-white px-6 py-3 rounded-lg hover:bg-boxing-red hover:border-boxing-red transition-colors duration-200"
+      >
+        Stop By for a Free First Class
+      </a>
     </div>
   </div>
 </div>
