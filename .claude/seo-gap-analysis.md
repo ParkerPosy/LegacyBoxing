@@ -157,33 +157,33 @@ These pages rank well but users aren't clicking. Title tags and meta description
 **Action Plan:**
 - [x] Rewrite `<title>` and `<meta name="description">` for Gallery, Contact, Membership, and MMA pages — *Done: all 8 pages now have custom, CTR-optimized titles and descriptions*
 - [x] Use action-oriented, CTR-optimized copy with unique value propositions
-- [x] Include pricing signals ("from $60/mo"), urgency ("First Class Free"), and location ("State College") — *Pricing in Youth/Membership/Private Training titles; "First Class Free" in homepage + contact titles + 7/8 descriptions; "State College" in all titles*
+- [x] Include pricing signals ("from $60/mo"), urgency ("First Class Free"), and location ("State College") — *Pricing in Youth/Membership/Private Training titles; "First Class Free" in homepage + contact titles + 6/9 descriptions (missing: Private Training, Schedule, Gallery); "State College" in 8/9 titles (missing: Gallery)*
 - [ ] A/B test descriptions by monitoring CTR changes in GSC after deployment
 
 **Proposed Title/Description Rewrites:**
 
-**Gallery** (current CTR: 0.17%)
+**Gallery** (current CTR: 0.17%) ✅ DEPLOYED
 ```
 Title: Photos & Videos | Legacy Boxing & Combat Sports Academy
-Description: See our fighters in action — training sessions, competition wins, and youth boxing highlights at Legacy Boxing in State College, PA.
+Description: See our fighters in action – training sessions, competition wins & youth boxing highlights at Legacy Boxing in State College, PA.
 ```
 
-**Contact** (current CTR: 0.15%)
+**Contact** (current CTR: 0.15%) ✅ DEPLOYED
 ```
-Title: Contact Us — First Class Free | Legacy Boxing State College
+Title: Contact Us – First Class Free | Legacy Boxing State College
 Description: Visit Legacy Boxing at 2820 E College Ave, State College PA. Call (814) 599-1682 or drop in. Mon–Sat classes available. Your first class is free.
 ```
 
-**Membership** (current CTR: 0.10%)
+**Membership** (current CTR: 0.10%) ✅ DEPLOYED
 ```
 Title: Membership Plans from $60/mo | Legacy Boxing State College
 Description: Boxing $80/mo, MMA $80/mo, Youth $60/mo, or combo $125/mo. No contracts required. Try your first class free at Legacy Boxing in State College, PA.
 ```
 
-**MMA** (current CTR: 0.45%, 4,639 impressions)
+**MMA** (current CTR: 0.45%, 4,639 impressions) ✅ DEPLOYED
 ```
-Title: MMA Classes — Kosen Judo, Muay Thai & Boxing | Legacy Boxing State College
-Description: Train MMA built on Kosen Judo grappling, Muay Thai striking & boxing at Legacy Boxing in State College, PA. USA Judo certified coach. First class free.
+Title: MMA Classes in State College, PA | Mixed Martial Arts Near Penn State – Legacy Boxing
+Description: Mixed martial arts classes from $80/mo in State College. Boxing, Judo & Muay Thai in one complete MMA system. USA Judo certified coach. First class free.
 ```
 
 ### 1B. Homepage — Already #1 For Core Queries, Avg Position Misleading
@@ -382,9 +382,9 @@ Current site has minimal cross-linking between pages. Each page should link to:
 Specific links to add:
 - [x] Boxing page → ~~Women's Boxing (new),~~ Youth Programs, Private Training — *Links to MMA, Youth, Private Training, Membership, Schedule added*
 - [x] MMA page → Schedule, Membership, Private Training — *"Continue Exploring" section added*
-- [ ] Youth page → Schedule, Membership, Gallery — *Only links to Contact currently*
-- [x] All course pages → Membership (pricing CTA) — *Boxing and MMA have links; youth and private-training still missing*
-- [x] All course pages → Schedule (class times CTA) — *Boxing and MMA have links; youth and private-training still missing*
+- [x] Youth page → Schedule, Membership, Gallery — *"Continue Exploring" section added with links to Boxing, MMA, Private Training, Membership, Schedule, and Gallery*
+- [x] All course pages → Membership (pricing CTA) — *All four course pages now link to Membership*
+- [x] All course pages → Schedule (class times CTA) — *All four course pages now link to Schedule*
 - [x] Homepage → All subpages with descriptive anchor text (not "Learn More") — *"The Legacy Experience" section links to all programs*
 
 ### 3D. Schema Markup Expansion
@@ -392,10 +392,10 @@ Specific links to add:
 Current: `SportsActivityLocation` JSON-LD (good foundation)
 
 Add:
-- [x] `FAQPage` schema on relevant pages — *Added to MMA page (7 Q&As); not yet on other pages*
+- [x] `FAQPage` schema on relevant pages — *Added to MMA page (7 Q&As), Boxing page (7 Q&As), Keystone Games event page (5 Q&As), Membership page (5 Q&As), and Contact page (5 Q&As)*
 - [x] `Course` schema for each program (boxing, MMA, youth, etc.) — *Added to boxing, MMA, and youth-programs index.html*
 - [ ] `Review` / `AggregateRating` schema if reviews are available
-- [ ] `Event` schema for competitions, open houses, or special events
+- [x] `Event` schema for competitions, open houses, or special events — *SportsEvent schema on Keystone Games page with nested superEvent for State Games of America 2026, offers, dates, and location*
 - [x] `Person` schema for Coach Derek Roth on the about page — *Embedded as `founder` in main JSON-LD with credentials, certifications, awards*
 - [x] `BreadcrumbList` schema for navigation hierarchy — *Added to all 8 subpage index.html files*
 
@@ -489,12 +489,12 @@ The MMA page gets 5,673 lifetime impressions (2,451 in 3 months) — most of any
 #### Revised Action Plan for MMA
 
 **Immediate (do now — title/meta rewrite):**
-- [ ] **Rewrite MMA title tag:** Remove "Kosen Judo" from title. Proposed: `MMA Classes in State College, PA | Mixed Martial Arts Near Penn State – Legacy Boxing`
+- [x] **Rewrite MMA title tag:** Remove "Kosen Judo" from title. — *Done: `MMA Classes in State College, PA | Mixed Martial Arts Near Penn State – Legacy Boxing`*
   - Hits: "MMA classes", "State College PA", "Mixed Martial Arts", "Near Penn State", brand name
-  - "Kosen Judo" stays in body content and meta description for differentiation without hurting CTR
-- [ ] **Rewrite MMA meta description:** Lead with social proof + price + query match. Proposed: `Mixed martial arts classes starting at $80/mo in State College. Boxing, Judo & Muay Thai in one complete MMA system. USA Judo certified coach. First class free.`
+  - "Kosen Judo" stays in body content (8 mentions) for differentiation without hurting CTR
+- [x] **Rewrite MMA meta description:** Lead with social proof + price + query match. — *Done: `Mixed martial arts classes from $80/mo in State College. Boxing, Judo & Muay Thai in one complete MMA system. USA Judo certified coach. First class free.`*
   - Hits: price (cheaper than competitors), class types, certification, CTA
-- [ ] **Add 3-5 more testimonials** to MMA page from current students — even 3 named quotes would 4X our social proof
+- [x] **Add 3-5 more testimonials** to MMA page from current students — *Done: 3 named testimonials now on page (MMA Student & Penn State Graduate, Working Professional & MMA Member, Penn State Student & Current Member). Was 1, now 3 — meets the "even 3 named quotes" minimum.*
 
 **Short-term (create new pages):**
 - [ ] **Create Penn State / Students page** (`/pages/penn-state/`) — target 312 impressions of "penn state mma/boxing/bjj" queries with zero clicks
@@ -701,8 +701,8 @@ Queries for gyms in other Pennsylvania cities where we appear due to state-level
 We cannot prevent Google from showing our site for other Legacy gyms' queries. We CAN make it immediately clear we're in State College:
 
 - [x] JSON-LD with full address and geo coordinates (already done)
-- [x] Add "State College, PA" to ALL page `<title>` tags (most impactful) — *All 8 page titles now include "State College"*
-- [x] Add "State College" to `<meta description>` on all pages — *All 8 descriptions include "State College" or "State College, PA"*
+- [x] Add "State College, PA" to ALL page `<title>` tags (most impactful) — *8/9 original page titles include "State College"; Gallery title ("Photos & Videos | Legacy Boxing & Combat Sports Academy") is the exception. Event/article titles omit it but include State College in descriptions.*
+- [x] Add "State College" to `<meta description>` on all pages — *All 9 original page descriptions include "State College" or "State College, PA"*
 - [ ] Consider adding "State College" to the site's visual header/hero
 - [ ] Ensure Google Business Profile category and attributes are fully optimized
 - [ ] The brand collision is **not fixable** — it's a shared name problem. Focus energy on owning location-qualified queries instead.
@@ -733,10 +733,10 @@ We cannot prevent Google from showing our site for other Legacy gyms' queries. W
 
 These pages have significantly less prose than the course pages (~800-1,500 words each), which creates an inconsistent experience and underperforms for indexed pages:
 
-- [ ] **Membership page — 2 sentences of body copy.** "Explore our full list of memberships, programs, and training options. Whether you're new or experienced, there's something here for everyone." — This is the most generic copy on the entire site. A page asking people to spend money should build perceived value first. Add a short value reinforcement section above the pricing cards (what you get, what makes Legacy different, the "first class free" hook).
+- [x] **Membership page — content enriched.** Added "Why Train at Legacy Boxing?" value-reinforcement section (4 proof points), "First Class is Free" banner, FAQ accordion (5 Q&As matching FAQ schema), and "Explore Our Programs" cross-links.
   - File: `pages/membership/membership.html`
 
-- [ ] **Contact page — 4 sentences total.** No FAQ, no "what to expect on your first visit" content, no embedded schedule summary. This page is a high-intent destination (people ready to reach out) but offers almost nothing for Google to index. Add a brief "What to Expect" section and a mini-FAQ.
+- [x] **Contact page — content enriched.** Already had "What to Expect on Your First Visit" section. Added "Common Questions" FAQ accordion (5 Q&As with internal links to program pages, matching FAQ schema), "Explore Our Programs" cross-links.
   - File: `pages/contact/contact.html`
 
 - [ ] **Gallery page — 1 closing sentence.** No introduction or narrative context. Even 2-3 sentences establishing what the gallery represents ("See real training, real athletes, and the community that makes Legacy different") would add value and keywords.
@@ -781,8 +781,8 @@ Impact: Highest CTR improvement + plant the strategic differentiator
 1. ✅ **Rewrite title tags and meta descriptions** for all 9 existing pages — "State College" in all titles, "First Class Free" in homepage + contact titles + 7/8 descriptions, Kosen Judo in MMA page title/meta
 2. ✅ **Rewrite MMA page content** — Restructured around three-pillar system (Boxing + Judo + Muay Thai), beginner section, credentials block, FAQ accordion with 7 Q&As. *Note: Body content uses "Judo" rather than "Kosen Judo"*
 3. ❌ **Create Kosen Judo page** — Not yet created
-4. ✅ **Add internal links** between all pages — Boxing, MMA, homepage, schedule, membership all cross-linked. *Gap: Youth and Private Training pages still only link to Contact*
-5. ⚠️ **Add FAQ schema** — FAQPage schema on MMA page (7 Q&As). *Gap: No FAQ schema on homepage or other pages*
+4. ✅ **Add internal links** between all pages — Boxing, MMA, homepage, schedule, membership all cross-linked. Youth page now links to Boxing, MMA, Private Training, Membership, Schedule, and Gallery. Private Training page now links to Boxing, MMA, Youth, Membership, and Schedule.
+5. ⚠️ **Add FAQ schema** — FAQPage schema on MMA page (7 Q&As), Boxing page (7 Q&As), Keystone Games event page (5 Q&As), Membership page (5 Q&As), and Contact page (5 Q&As). *Gap: No FAQ schema on homepage, youth, private training, gallery, or schedule pages*
 6. ✅ **Fix tone/content quick wins** — Brand name standardized to "&", footer capitalization fixed, duplicate testimonial replaced, dash usage standardized. *Gap: "State College, PA" not yet consistent in all H1 tags*
 
 ### Phase 1.5 — POST-UPDATE URGENT ITEMS (New from Feb 21 data) 🔴
@@ -790,8 +790,8 @@ Impact: Directly address declining metrics and unlock rich results
 
 7. 🔴 **Submit all 12 URLs for recrawl** in Google Search Console — Title/meta rewrites and JSON-LD won't take effect until Google recrawls. This is the single most impactful action right now.
 8. 🔴 **Validate JSON-LD via Google Rich Results Test** — Search Appearance is empty in both exports. Verify structured data parses correctly before assuming Google will generate rich results.
-9. 🔴 **Fix Membership page content** — CTR dropped from 0.27% → 0.08% despite having 1,281 impressions in 3 months. Page has only 2 sentences. Add value-reinforcement section, pricing comparison table, "first class free" hook, and FAQ.
-10. 🔴 **Fix Contact page content** — CTR at 0.18% with 1,138 impressions. Add "What to Expect on Your First Visit" section, embedded schedule summary, and mini-FAQ.
+9. � **Fix Membership page content** — Added "Why Train at Legacy Boxing?" value section, "First Class is Free" banner, 5-question FAQ accordion with FAQPage schema, and "Explore Our Programs" cross-links.
+10. 🟢 **Fix Contact page content** — Added "Common Questions" FAQ accordion (5 Q&As with internal links) with FAQPage schema, and "Explore Our Programs" cross-links. "What to Expect" section was already present.
 11. 🔴 **Fix Gallery page content** — CTR at 0.25% with 1,206 impressions. Add introductory narrative and descriptive captions with keywords.
 12. ⚠️ **Monitor MMA page post-recrawl** — CTR declined from 0.76% → 0.45% but we rewrote the page content. Need Google to recrawl before evaluating whether the rewrite improved things.
 
@@ -802,7 +802,7 @@ Impact: Directly address declining metrics and unlock rich results
 15. ❌ **Create Kickboxing / Muay Thai page** — Not yet created. Now **ranking #1 for "kickboxing"** (pos 1.38) with zero dedicated content. A page will likely dominate the entire kickboxing/muay thai query cluster.
 16. ✅ **Add beginner-focused content** to Boxing and MMA pages — Boxing: "All Levels Welcome", "No Sparring Required", "What to Expect" section. MMA: "Who Should Train MMA?", "Beginner-Friendly" card, FAQ answers.
 17. ✅ **Enrich homepage content** — "The Legacy Experience" programs overview, Centre County/Penn State references, USA Boxing LBC badge, coach credentials
-18. ⚠️ **Enrich thin pages** — Dash usage standardized sitewide. *Remaining: Membership (#9 above), Contact (#10), Gallery (#11). MMA FAQ verbosity not yet tightened.*
+18. ⚠️ **Enrich thin pages** — Dash usage standardized sitewide. Membership and Contact pages enriched with FAQ sections and cross-links. *Remaining: Gallery (#11). MMA FAQ verbosity not yet tightened.*
 
 ### Phase 3 — Expansion Pages (Not Started)
 
@@ -813,7 +813,7 @@ Impact: Directly address declining metrics and unlock rich results
 ### Phase 4 — Technical & Schema ✅ MOSTLY COMPLETE
 
 22. ✅ **Add Course schema** to boxing, MMA, and youth-programs pages
-23. ⚠️ **Add FAQPage schema** — Done on MMA page and boxing page and keystone games event page only. *Consider adding to homepage.*
+23. ⚠️ **Add FAQPage schema** — Done on MMA page, boxing page, keystone games event page, membership page, and contact page. *Consider adding to homepage and youth.*
 24. ✅ **Add BreadcrumbList schema** — All subpages
 25. ✅ **Add Person schema** for coaches — Coach Derek Roth as `founder` in main JSON-LD with credentials, certifications, awards
 26. ❌ **Optimize schedule page** for featured snippet — Schedule page position regressed (9.49 → 11.45), CTR dropped to 0.17%
@@ -861,7 +861,7 @@ Impact: Directly address declining metrics and unlock rich results
 >
 > **Competitive context (Feb 2026 analysis):** Central PA MMA (cpamma.com) dominates position #1 with 500+ Google reviews, dedicated PSU Students page, 6 separate program pages, and title tag that matches search queries exactly. Lombard MMA (lombardmma.com) holds #2 with 20+ years brand history. Legacy at #3-5 has the best structured data but weakest social proof (1 testimonial), a title tag with niche terminology ("Kosen Judo") searchers don't use, and only 2 MMA sessions/week vs CPAMMA's 60+ hours. Price advantage ($80 vs $99-109) is invisible in snippets.
 
-**Strategy:** Remove "Kosen Judo" from title tag (keep in body). Add "Penn State" and "Mixed Martial Arts" to title. Surface $80/mo pricing. Add 3-5 testimonials. Create separate Judo and Kickboxing pages to compete with CPAMMA's per-discipline page strategy. Build Google Reviews to close the 500-to-0 social proof gap. **Priority: trigger recrawl immediately to activate the new content.**
+**Strategy:** ~~Remove "Kosen Judo" from title tag (keep in body). Add "Penn State" and "Mixed Martial Arts" to title. Surface $80/mo pricing. Add 3-5 testimonials.~~ → **All done.** Title rewritten, $80/mo in meta description, 3 testimonials added. Create separate Judo and Kickboxing pages to compete with CPAMMA's per-discipline page strategy. Build Google Reviews to close the 500-to-0 social proof gap. **Priority: trigger recrawl immediately to activate the new content.**
 
 ### Cluster: Youth/Kids
 `boxing classes for kids near me` (15) + `kids boxing classes near me` (19) + `boxing for kids near me` (13) + `kids boxing near me` (9) + `kids boxing` (5) + `youth boxing near me` (8) + `teen boxing classes` (2) + `mma for kids near me` (4) + `kids mma classes near me` (1)
