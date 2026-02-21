@@ -1,24 +1,143 @@
 # SEO Gap Analysis — Search Console Data Review
 
-> Based on 6 months of Google Search Console data (Aug 13, 2025 – Feb 12, 2026)
-> Created: 2026-02-14
+> **Data sources:**
+> - Lifetime export: May 1, 2025 – Feb 15, 2026 (1,688 clicks | 29,996 impressions)
+> - 3-month export: Nov 20, 2025 – Feb 19, 2026 (673 clicks | 14,157 impressions)
+> Created: 2026-02-14 | Updated: 2026-02-21
 
 ---
 
 ## Executive Summary
 
-**Total Performance (6 months):** 1,258 clicks | ~37,300 impressions | ~5.1% avg CTR | avg position ~12
+**Total Performance (lifetime ~9.5 months):** 1,688 clicks | 29,996 impressions | 5.63% avg CTR | avg position ~12
+**Recent 3-month slice:** 673 clicks | 14,157 impressions | 4.75% avg CTR
 
 > **⚠️ Brand Name Collision Warning:** "Legacy Boxing" is not a unique gym name. Multiple gyms across the US (NJ, FL, OH, WA, Germany) share the name. Google conflates these businesses, inflating our impressions with queries intended for other gyms. This pollutes average CTR downward and average position upward. All metrics below should be read with this context. See [Section 6: Brand Collision Analysis](#6-brand-collision-analysis) for detailed breakdown.
 
 **Key findings:**
-1. **Homepage dominates core local queries** — ranks **#1-2** for "boxing state college" (pos 1.54), "legacy boxing state college" (pos 1.47), "boxing near me" (pos 2.2), "boxing gym near me" (pos 2.95). The reported avg position of 12.38 is **artificially inflated** by brand collision queries for other gyms where we rank 15-50+.
-2. Gallery, Contact, and Membership have strong positions (5-6) but low CTR (0.1-0.17%) — meta descriptions need improvement, though some CTR depression is caused by impression noise from non-local brand queries
-3. MMA page has the most impressions (4,639) of any subpage but lowest CTR (0.45%) — title/description mismatch vs. searcher intent
-4. Significant content gaps: no pages for Women's Boxing, Judo, Kickboxing/Muay Thai, Self-Defense, Penn State connection, Coach Bios, or Beginners
-5. Mobile accounts for 75% of traffic — mobile-first optimization is essential
-6. Impressions nearly doubled (75/day → 180/day) over 6 months while avg position improved from ~20 → ~10, indicating growing domain authority
-7. **~2,500–3,500 of ~37,300 total impressions (7-9%) are noise** from queries for other "Legacy" branded gyms, generic "legacy" searches, other PA city gyms, and irrelevant informational queries. Our real CTR on relevant queries is likely **6-8%**, not 5.1%.
+1. **Homepage dominates core local queries** — ranks **#1-2** for "boxing state college" (pos 1.57→1.64), "legacy boxing state college" (pos 1.56→1.95), "boxing near me" (pos 2.69→2.81), "boxing gym near me" (pos 3.38→3.77). The reported avg homepage position of 12.69 is **artificially inflated** by brand collision queries for other gyms where we rank 15-50+.
+2. Gallery, Contact, and Membership have strong positions (5-6) but **abysmal CTR** (0.08-0.25%) — meta descriptions were rewritten but haven't been recrawled by Google yet. **Membership CTR dropped from 0.27% to 0.08% in the 3-month window** — the thin-content problem on this page is critical.
+3. MMA page has the most impressions (5,673 lifetime / 2,451 recent) of any subpage but the lowest CTR (0.76%→0.45%) — **CTR is getting worse, not better.** This confirms the MMA page content overhaul was necessary, but Google needs to recrawl it.
+4. Significant content gaps remain: no pages for Women's Boxing, Judo, Kickboxing/Muay Thai, Self-Defense, Penn State connection, Coach Bios, or Beginners
+5. Mobile accounts for **72%** of traffic — mobile-first optimization is essential
+6. **January 2026 was the best month ever:** 264 clicks, 5,435 impressions (~8.5 clicks/day, 175 imp/day). Impressions nearly tripled from June 2025 (~62/day) to January 2026 (~175/day), indicating strong domain authority growth.
+7. **~7-9% of total impressions are noise** from brand collision (other Legacy gyms, other PA cities, irrelevant queries). Our real CTR on relevant queries is likely **6-8%**.
+8. **NEW: Search Appearance is empty in both exports** — no rich results showing despite having JSON-LD on all pages. Google hasn't generated rich results yet; need to verify recrawl status and monitor.
+9. **NEW: Keystone Games pages are indexed** — both the event page (pos 6.36, 45 imp) and the article (pos 5.11, 44 imp) appeared in the 3-month data, absent from lifetime data. Early indexing signal is positive.
+10. **NEW: Post-update daily CTR spike (Feb 15-19):** avg 9.0 clicks/day at 6.72% CTR vs. pre-update Feb 1-14 avg of 7.07 clicks/day at 4.13% CTR. Too small a window (5 days) to be conclusive, but directionally positive — impressions dropped 22% while clicks rose 27%, suggesting Google is surfacing us for fewer but more relevant queries.
+
+---
+
+## 0. February 21, 2026 — Post-Update Performance Review
+
+This section compares data from the Feb 15 lifetime export and Feb 21 three-month export against the original gap analysis (created Feb 14). Our SEO changes (title/meta rewrites, JSON-LD overhaul, content enrichment, internal linking) were deployed around Feb 14-15.
+
+### 0A. Monthly Growth Trend
+
+| Month | Clicks | Impressions | Clicks/Day | Imp/Day | Avg CTR |
+|-------|--------|-------------|------------|---------|--------|
+| May 2025 (partial) | ~24 | ~192 | 3.0 | 24.0 | 12.5% |
+| Jun 2025 | ~133 | ~1,871 | 4.4 | 62.4 | 7.1% |
+| Jul 2025 | ~163 | ~2,819 | 5.3 | 90.9 | 5.8% |
+| Aug 2025 | ~152 | ~3,106 | 4.9 | 100.2 | 4.9% |
+| Sep 2025 | ~196 | ~3,077 | 6.5 | 102.6 | 6.4% |
+| Oct 2025 | ~201 | ~2,936 | 6.5 | 94.7 | 6.8% |
+| Nov 2025 | ~129 | ~2,939 | 4.3 | 98.0 | 4.4% |
+| Dec 2025 | ~186 | ~4,029 | 6.0 | 130.0 | 4.6% |
+| **Jan 2026** | **~264** | **~5,435** | **8.5** | **175.3** | **4.9%** |
+| Feb 1-14, 2026 | ~105 | ~2,651 | 7.0 | 176.7 | 4.0% |
+| **Feb 15-19 (post-update)** | **~45** | **~670** | **9.0** | **134.0** | **6.7%** |
+
+**Key observations:**
+- Impressions nearly tripled from June to January (62→175/day), confirming strong domain authority growth
+- November 2025 was a dip (seasonal + Thanksgiving), but December-January surged
+- January 2026 was the all-time best month by both clicks AND impressions
+- The post-update window (Feb 15-19) shows a **27% click increase** and **63% CTR increase** vs Feb 1-14, but impressions dropped 22%. This pattern (fewer impressions + higher CTR) is a classic positive signal — it means Google is being more selective about when to show us, and users click more when they see us. **But 5 days is not statistically significant — monitor through March.**
+
+### 0B. Page-Level Changes (Lifetime vs. 3-Month)
+
+| Page | Lifetime Clicks | 3mo Clicks | Lifetime CTR | 3mo CTR | Lifetime Pos | 3mo Pos | Trend |
+|------|----------------|-----------|-------------|---------|-------------|---------|-------|
+| Homepage | 1,530 | 617 | 6.15% | 5.67% | 12.69 | 10.89 | ⚠️ CTR down, position improved |
+| Private Training | 47 | 19 | 1.41% | 1.03% | 7.54 | 8.28 | ⚠️ CTR down, position worse |
+| MMA | 43 | 11 | 0.76% | 0.45% | 11.71 | 11.74 | 🔴 CTR halved, big problem |
+| Boxing | 37 | 17 | 1.02% | 0.96% | 9.47 | 8.64 | ➡️ Stable |
+| Youth Programs | 17 | 10 | 1.37% | 1.65% | 7.41 | 8.32 | 🟢 CTR improved |
+| Contact | 8 | 2 | 0.32% | 0.18% | 6.45 | 6.51 | 🔴 CTR dropped |
+| Gallery | 7 | 3 | 0.24% | 0.25% | 5.68 | 6.13 | ➡️ Stable (still terrible) |
+| Membership | 7 | 1 | 0.27% | 0.08% | 6.29 | 6.07 | 🔴 CTR collapsed — critical |
+| Schedule | 7 | 1 | 0.59% | 0.17% | 9.49 | 11.45 | 🔴 CTR and position worse |
+| **Keystone Games** | — | **1** | — | **2.22%** | — | **6.36** | 🆕 Newly indexed |
+| **KG Article** | — | **1** | — | **2.27%** | — | **5.11** | 🆕 Newly indexed |
+
+**Critical takeaways:**
+1. **Membership page is an emergency** — 1,281 impressions but 0.08% CTR. Users see this page in search results and actively choose NOT to click. The page has only 2 sentences of body copy. Title/meta rewrites alone won't fix this — the page itself needs substantial content.
+2. **MMA page CTR is actively declining** (0.76%→0.45%) despite having 2,451 recent impressions. Our content rewrite addressed this but Google hasn't recrawled yet. This is the highest-impact page to monitor after recrawl.
+3. **Contact page** is underperforming despite good position (6.51). Thin content (4 sentences) likely contributes.
+4. **Youth Programs** is the only subpage showing CTR improvement — may indicate the content was already better targeted.
+5. **Keystone Games pages indexing at position 5-6 within their first few months** is a very strong signal. These pages have quality JSON-LD, targeted content, and good internal linking.
+
+### 0C. Query CTR Changes (Lifetime vs. 3-Month)
+
+**Improving (our title/meta rewrites may be starting to take effect):**
+
+| Query | Lifetime CTR | 3mo CTR | Lifetime Pos | 3mo Pos | Signal |
+|-------|-------------|---------|-------------|---------|--------|
+| legacy boxing | 9.89% | **11.97%** | 7.88 | 7.67 | 🟢 +2% CTR, position stable |
+| legacy boxing state college | 53.17% | **56.63%** | 1.56 | 1.95 | 🟢 +3.5% CTR |
+| boxing state college | 25.16% | **40.43%** | 1.57 | 1.64 | 🟢 +15% CTR! |
+| boxing near me | 14.43% | **20.93%** | 2.69 | 2.81 | 🟢 +6.5% CTR |
+| boxing classes near me | 11.11% | **17.86%** | 5.08 | 3.82 | 🟢 +6.8% CTR + position improved |
+| boxing gym near me | 14.77% | 14.58% | 3.38 | 3.77 | ➡️ Stable |
+| kickboxing near me | 8% | **30%** | 5.44 | 4.50 | 🟢 Huge improvement |
+| jiu jitsu near me | 2.08% | **5.41%** | 7.77 | 5.81 | 🟢 Position + CTR both improved |
+| kickboxing | 0% (pos 2.0) | 0% (pos **1.38**) | — | — | 🟢 #1 position! (needs clicks) |
+
+**Declining or stagnant (need attention):**
+
+| Query | Lifetime CTR | 3mo CTR | Lifetime Pos | 3mo Pos | Signal |
+|-------|-------------|---------|-------------|---------|--------|
+| mma state college | 4.49% | **1.56%** | 4.42 | 4.50 | 🔴 CTR halved at same position |
+| mma gyms near me | 3.93% | 5.88% | 5.90 | 5.46 | ⚠️ Slight improvement but still low |
+| legacy boxing club | 0.83% | 1.13% | 14.40 | 13.54 | ➡️ Noise (other gyms' queries) |
+| combat sports academy near me | 0% | 0% | 57.98 | 45.91 | ⚠️ Improving but still invisible |
+| penn state boxing | 0% | 0% | 16.07 | 15.00 | 🔴 No improvement, no content |
+| derek roth | 3.33% | 3.80% | 8.62 | 8.68 | ➡️ Stable — needs About page |
+
+### 0D. Search Appearance — No Rich Results
+
+**Both exports show an empty Search Appearance table.** Despite having JSON-LD on all 12 pages (SportsActivityLocation, Course, FAQPage, Article, SportsEvent, WebSite, Service, BreadcrumbList), Google has not generated any rich result appearances.
+
+**Possible causes:**
+1. Google hasn't recrawled the site since our JSON-LD deployment (most likely)
+2. The structured data may pass validation but Google may not choose to display rich results for our type of content (local gyms rarely get Course or FAQ rich results in map-pack-heavy SERPs)
+3. Event rich results require the event to be in the future — Keystone Games 2026 qualifies
+
+**Action items:**
+- [ ] Submit all 12 URLs for recrawl via Google Search Console URL Inspection
+- [ ] Validate all JSON-LD via Google Rich Results Test (https://search.google.com/test/rich-results)
+- [ ] Monitor Search Appearance column weekly through March 2026
+- [ ] If still empty after 4 weeks post-recrawl, investigate whether Google is suppressing rich results for local gym SERPs
+
+### 0E. New Pages — Keystone Games Indexing
+
+Both the event page (`/pages/events/keystone-games/`) and the article page (`/pages/articles/legacy-boxing-hosts-keystone-games-2026/`) appeared in the 3-month export but were absent from the lifetime export. This confirms they were indexed recently.
+
+- **Event page:** 1 click, 45 impressions, position 6.36, CTR 2.22%
+- **Article page:** 1 click, 44 impressions, position 5.11, CTR 2.27%
+- **Articles index:** 0 clicks, 5 impressions, position 17.80
+
+Position 5-6 on initial indexing is excellent. These pages have complete JSON-LD (SportsEvent + FAQPage on event, Article on article), keyword-optimized titles/descriptions, and good internal linking. As Google processes the structured data and the pages accumulate authority, positions should improve.
+
+### 0F. Device Split
+
+| Device | Lifetime Clicks | Lifetime % | 3mo Clicks | 3mo % |
+|--------|----------------|-----------|-----------|------|
+| Mobile | 1,203 | 71.3% | 488 | 72.5% |
+| Desktop | 479 | 28.4% | 184 | 27.3% |
+| Tablet | 6 | 0.4% | 1 | 0.1% |
+
+Mobile dominance is consistent and slightly increasing. All optimization should remain mobile-first.
 
 ---
 
@@ -26,14 +145,14 @@
 
 ### 1A. CTR Crisis — Pages With Good Rank But Terrible CTR
 
-These pages rank well but users aren't clicking. The title tags and meta descriptions are the problem.
+These pages rank well but users aren't clicking. Title tags and meta descriptions have been rewritten but Google hasn't recrawled all pages yet.
 
-| Page | Position | Impressions | CTR | Problem |
-|------|----------|-------------|-----|---------|
-| Gallery | 5.54 | 2,290 | **0.17%** | Generic title/description, no reason to click |
-| Contact | 6.01 | 1,949 | **0.15%** | No value proposition in SERP snippet |
-| Membership | 6.27 | 2,056 | **0.10%** | Bland description, no pricing hook or urgency |
-| MMA | 10.93 | 4,639 | **0.45%** | High impressions but title may not match queries |
+| Page | Position | Lifetime Imp | Lifetime CTR | 3mo Imp | 3mo CTR | Trend |
+|------|----------|-------------|-------------|---------|---------|-------|
+| Gallery | 5.68 | 2,864 | **0.24%** | 1,206 | **0.25%** | ➡️ No change yet |
+| Contact | 6.45 | 2,505 | **0.32%** | 1,138 | **0.18%** | 🔴 Worse |
+| Membership | 6.29 | 2,587 | **0.27%** | 1,281 | **0.08%** | 🔴 Critical — needs content |
+| MMA | 11.71 | 5,673 | **0.76%** | 2,451 | **0.45%** | 🔴 CTR halved |
 
 **Action Plan:**
 - [x] Rewrite `<title>` and `<meta name="description">` for Gallery, Contact, Membership, and MMA pages — *Done: all 8 pages now have custom, CTR-optimized titles and descriptions*
@@ -69,30 +188,28 @@ Description: Train MMA built on Kosen Judo grappling, Muay Thai striking & boxin
 
 ### 1B. Homepage — Already #1 For Core Queries, Avg Position Misleading
 
-The homepage captures 93% of clicks (1,165). The reported avg position of 12.38 is **misleading** — it's a blended average across all queries, including hundreds of brand-collision queries for other "Legacy Boxing" gyms where we rank 15-50+.
+The homepage captures **91% of clicks** (1,530 lifetime / 617 in 3mo). The reported avg position of 12.69 (lifetime) / 10.89 (3mo) is **misleading** — it's a blended average across all queries, including hundreds of brand-collision queries for other "Legacy Boxing" gyms where we rank 15-50+.
 
-**Actual homepage positions for queries that matter:**
+**Actual homepage positions for queries that matter (lifetime → 3mo comparison):**
 
-| Query | Position | CTR | Status |
-|-------|----------|-----|--------|
-| legacy boxing state college | **1.47** | 50.5% | ✅ Dominant |
-| boxing state college | **1.54** | 28.0% | ✅ Dominant |
-| boxing near me | **2.2** | 14.5% | ✅ Strong |
-| boxing gym near me | **2.95** | 14.8% | ✅ Strong |
-| legacy gym | **2.38** | 31.3% | ✅ Strong |
-| boxing classes | **2.63** | 11.1% | ✅ Strong |
-| boxing clubs near me | **2.58** | 15.8% | ✅ Strong |
-| boxing gym state college | **3.89** | 26.2% | ✅ Strong |
-| boxing gyms near me | **4.28** | 12.2% | Good — push to top 3 |
-| boxing classes near me | **4.97** | 11.0% | Good — push to top 3 |
-| mma state college | **4.39** | 2.4% | ⚠️ Good rank, low CTR |
-| mma gyms near me | **5.38** | 3.9% | ⚠️ Good rank, low CTR |
-| legacy boxing | **7.53** | 12.1% | Mixed — brand collision depresses rank |
-| legacy boxing gym | **9.76** | 3.2% | Mixed — brand collision depresses rank |
+| Query | Lifetime Pos | 3mo Pos | Lifetime CTR | 3mo CTR | Status |
+|-------|-------------|---------|-------------|---------|--------|
+| legacy boxing state college | **1.56** | **1.95** | 53.2% | **56.6%** | ✅ Dominant, CTR up |
+| boxing state college | **1.57** | **1.64** | 25.2% | **40.4%** | ✅ Dominant, CTR up 15%! |
+| boxing near me | **2.69** | **2.81** | 14.4% | **20.9%** | ✅ Strong, CTR up 6% |
+| boxing gym near me | **3.38** | **3.77** | 14.8% | 14.6% | ✅ Strong, stable |
+| legacy gym | **2.29** | **1.00** | 35.3% | **75%** | ✅ Dominant |
+| boxing classes near me | **5.08** | **3.82** | 11.1% | **17.9%** | 🟢 Position + CTR both improved |
+| boxing gym state college | **3.89** | **5.82** | 26.2% | 24.2% | ⚠️ Position slipped |
+| boxing gyms near me | **4.79** | **4.87** | 11.8% | 13.0% | Good — steady improvement |
+| mma state college | **4.42** | **4.50** | 4.5% | **1.6%** | 🔴 CTR collapsed — MMA snippet weak |
+| mma gyms near me | **5.90** | **5.46** | 3.9% | 5.9% | ⚠️ Slight improvement |
+| legacy boxing | **7.88** | **7.67** | 9.9% | **12.0%** | 🟢 CTR improving |
+| legacy boxing gym | **9.72** | **9.78** | 2.8% | 2.3% | ➡️ Still brand-collided |
 
 The homepage is **already on page 1** for virtually all high-intent local queries. The opportunity is not "getting to page 1" — it's:
-1. Pushing positions 4-5 → top 3 (boxing gyms near me, boxing classes near me)
-2. Improving CTR on MMA/martial arts queries (rank is good, snippet is weak)
+1. ~~Pushing positions 4-5 → top 3 (boxing gyms near me, boxing classes near me)~~ → **DONE for boxing classes near me (5.08→3.82)**; boxing gyms near me still at 4.87
+2. Improving CTR on MMA/martial arts queries (rank is good, snippet is weak) — **WORSENED: mma state college CTR dropped from 4.5% to 1.6%**
 3. Disambiguating from other "Legacy" gyms on generic brand queries
 
 **Action Plan:**
@@ -105,11 +222,14 @@ The homepage is **already on page 1** for virtually all high-intent local querie
 
 ### 1C. High-Potential Subpages (Position 7-9 — Almost Page 1)
 
-| Page | Position | Clicks | Opportunity |
-|------|----------|--------|-------------|
-| Private Training | 7.43 | 35 | Already best-performing subpage, optimize to lock in top 5 |
-| Boxing | 8.77 | 29 | Content enrichment to push past competitors |
-| Schedule | 8.52 | 2 | Needs visible schedule content for featured snippets |
+| Page | Lifetime Pos | 3mo Pos | Lifetime Clicks | 3mo Clicks | Opportunity |
+|------|-------------|---------|----------------|-----------|-------------|
+| Private Training | 7.54 | 8.28 | 47 | 19 | Best-performing subpage by clicks, but CTR declining (1.41%→1.03%) — position slipped |
+| Boxing | 9.47 | 8.64 | 37 | 17 | Position improved — content enrichment is working |
+| Youth Programs | 7.41 | 8.32 | 17 | 10 | Only subpage with improving CTR (1.37%→1.65%) |
+| Schedule | 9.49 | 11.45 | 7 | 1 | **Regressed** — position and clicks both worse |
+| Keystone Games | — | 6.36 | — | 1 | 🆕 Promising initial position with 45 impressions |
+| KG Article | — | 5.11 | — | 1 | 🆕 Strong initial position with 44 impressions |
 
 ---
 
@@ -119,22 +239,22 @@ The homepage is **already on page 1** for virtually all high-intent local querie
 
 These queries generate significant impressions but zero clicks. **Critical distinction:** some are real opportunities, others are noise from brand collision or geographic irrelevance.
 
-**Real Opportunities (act on these):**
+**Real Opportunities (act on these — updated with 3-month data):**
 
-| Query | Impressions | Position | Gap |
-|-------|-------------|----------|-----|
-| "combat sports academy near me" | 223 | 57.23 | Very poor ranking despite being our literal name |
-| "penn state boxing" | 115 | 14.17 | No Penn State connection content |
-| "psu boxing" | 77 | 12.65 | Same — no Penn State content |
-| "gym in state college pa" | 70 | 82.31 | Effectively invisible |
-| "penn state mma" | 61 | 10.11 | No content connecting to Penn State |
-| "boxing pa" | 50 | 5.96 | Close to page 1 — PA-focused content |
-| "muay thai" | 18 | 6.44 | No dedicated Muay Thai content |
-| "judo" | 32 | 6.28 | No Judo page despite ranking |
-| "judo near me" | 16 | 5.19 | Ranking well but no landing page |
-| "kickboxing" | 26 | 1.88 | Ranking #2 with no content! |
-| "kickboxing near me" | 15 | 4.87 | No kickboxing page |
-| "self defense classes near me" | 23 | 7.48 | No self-defense content |
+| Query | Lifetime Imp | 3mo Imp | Position (3mo) | Gap |
+|-------|-------------|---------|----------------|-----|
+| "combat sports academy near me" | 464 | 99 | **45.91** | Position improving (57.98→45.91) but still invisible — it's our literal name |
+| "penn state boxing" | 137 | 104 | **15.00** | No Penn State content. 104 imp in 3mo = high demand. |
+| "psu boxing" | 98 | 57 | **13.33** | Same — no Penn State content |
+| "gym in state college pa" | 133 | * | **75↓40** | Still very poor ranking despite being a core local query |
+| "penn state mma" | 66 | 51 | **10.25** | No content connecting to Penn State |
+| "boxing pa" | 72 | 39 | **5.21** | **Improved from 6.89 → 5.21** — almost page 1 |
+| "muay thai" | 22 | 10 | **5.90** | No dedicated Muay Thai content |
+| "judo" | 39 | 9 | **4.11** | **Improved from 6.05 → 4.11** — ranking well with zero content! |
+| "judo near me" | 22 | 5 | **7.60** | Ranking on page 1 but no landing page |
+| "kickboxing" | 29 | 16 | **1.38** | **Now #1!** Was 2.0. Zero clicks = needs a dedicated page to convert |
+| "kickboxing near me" | 25 | 10 | **4.50** | Improved from 5.44. Strong with no content. |
+| "self defense classes near me" | 25 | 16 | **7.81** | Slightly worse position (7.32→7.81), no content |
 
 **Brand Collision Noise (IGNORE — these are for other gyms):**
 
@@ -365,20 +485,20 @@ Schedule-type content is prime for featured snippets (tables, lists).
 
 ### 5A. "Near Me" Query Dominance
 
-"Near me" queries represent a massive opportunity cluster:
+"Near me" queries represent a massive opportunity cluster (lifetime → 3-month comparison):
 
-| Query | Impressions | Current Position | Target |
-|-------|-------------|-----------------|--------|
-| boxing gyms near me | 262 | 4.28 | Top 3 |
-| boxing near me | 117 | 2.2 | Maintain |
-| boxing gym near me | 108 | 2.95 | Maintain |
-| boxing classes near me | 136 | 4.97 | Top 3 |
-| mma gyms near me | 181 | 5.38 | Top 3 |
-| mma near me | 84 | 5.31 | Top 3 |
-| jiu jitsu near me | 84 | 7.57 | Top 5 |
-| martial arts near me | 30 | 8.33 | Top 5 |
-| muay thai near me | 44 | 5.8 | Top 3 |
-| kickboxing near me | 15 | 4.87 | Top 3 |
+| Query | Lifetime Imp | 3mo Imp | Lifetime Pos | 3mo Pos | Target |
+|-------|-------------|---------|-------------|---------|--------|
+| boxing gyms near me | 372 | 100 | 4.79 | 4.87 | Top 3 |
+| boxing near me | 201 | 43 | 2.69 | 2.81 | Maintain |
+| boxing gym near me | 149 | 48 | 3.38 | 3.77 | Maintain |
+| boxing classes near me | 189 | 56 | 5.08 | **3.82** 🟢 | ~~Top 3~~ **Achieved!** |
+| mma gyms near me | 229 | 85 | 5.90 | 5.46 | Top 3 |
+| mma near me | 158 | 39 | 5.92 | 5.18 | Top 3 |
+| jiu jitsu near me | 96 | 37 | 7.77 | **5.81** 🟢 | Top 5 |
+| martial arts near me | 37 | 18 | 8.41 | 7.56 | Top 5 |
+| muay thai near me | 57 | 18 | 6.32 | 6.06 | Top 3 |
+| kickboxing near me | 25 | 10 | 5.44 | **4.50** 🟢 | Top 3 |
 
 **Actions:**
 - [x] Ensure NAP (Name, Address, Phone) is consistent across all pages — *JSON-LD has full NAP; consistent across site*
@@ -508,12 +628,12 @@ Queries for gyms in other Pennsylvania cities where we appear due to state-level
 
 #### Impact on Metrics
 
-| Metric | Raw (reported) | Estimated Real (noise-adjusted) |
-|--------|---------------|----------------------------------|
-| Total Impressions | ~37,300 | ~34,000–35,000 relevant |
-| Overall CTR | 5.1% | **~6-8%** (removing noise denominator) |
-| Homepage avg position | 12.38 | **~4-6** for target queries |
-| Homepage CTR | 6.15% | **~8-10%** for target queries |
+| Metric | Lifetime (raw) | 3-month (raw) | Estimated Real (noise-adjusted) |
+|--------|---------------|---------------|----------------------------------|
+| Total Impressions | 29,996 | 14,157 | ~13,000 relevant (3mo) |
+| Overall CTR | 5.63% | 4.75% | **~6-8%** (removing noise denominator) |
+| Homepage avg position | 12.69 | 10.89 | **~4-6** for target queries |
+| Homepage CTR | 6.15% | 5.67% | **~8-10%** for target queries |
 
 #### Disambiguation Strategy
 
@@ -530,15 +650,15 @@ We cannot prevent Google from showing our site for other Legacy gyms' queries. W
 
 | Query | Impressions | Position | Issue |
 |-------|-------------|----------|-------|
-| "combat sports academy near me" | 223 | **57.23** | Should rank top 3 — it's our literal name! |
-| "gym in state college pa" | 70 | **82.31** | Core local query, nearly invisible |
-| "gyms in state college pa" | 39 | **42.10** | Basic local query, invisible |
-| "beginner boxing classes near me" | 17 | **39.00** | No beginner content |
-| "gyms state college" | 11 | **30.27** | Generic gym query, poor rank |
-| "state college martial arts" | 10 | **14.00** | Close to page 1, should own |
-| "combat sports academy" | 33 | **27.64** | Our name — should be #1 |
-| "combat sports academy schedule" | 7 | **54.71** | Our name + schedule — invisible |
-| "mma state college" | 252 | **4.39** | Good rank but only 2.4% CTR — snippet is weak |
+| "combat sports academy near me" | 464 (99 in 3mo) | **45.91** (was 57.98) | Improving but still far from page 1 — it's our literal name |
+| "gym in state college pa" | 133 | **75↓40** | Still terrible but trending right direction |
+| "gyms in state college pa" | 69 | **37→39** | Basic local query, invisible |
+| "beginner boxing classes near me" | 19 (10 in 3mo) | **55** (was 35) | 🔴 Position got WORSE — despite adding beginner content |
+| "gyms state college" | 15 (8 in 3mo) | **31.38** | Generic gym query, poor rank |
+| "state college martial arts" | 13 (2 in 3mo) | **15.50** (was 13.31) | ⚠️ Slightly worse |
+| "combat sports academy" | 35 (25 in 3mo) | **28.68** (was 27.64) | Our name — still not ranking |
+| "combat sports academy schedule" | 17 (4 in 3mo) | **52.25** (was 70) | Improving but still invisible |
+| "mma state college" | 356 (128 in 3mo) | **4.50** | Good rank but **1.56% CTR is abysmal** — snippet is failing |
 
 > **Removed from this table:** Queries like "boxing legacy", "legacy boxing & fitness", etc. were previously listed as missed opportunities but are actually brand collision noise — searchers looking for other gyms.
 
@@ -604,67 +724,92 @@ Impact: Highest CTR improvement + plant the strategic differentiator
 5. ⚠️ **Add FAQ schema** — FAQPage schema on MMA page (7 Q&As). *Gap: No FAQ schema on homepage or other pages*
 6. ✅ **Fix tone/content quick wins** — Brand name standardized to "&", footer capitalization fixed, duplicate testimonial replaced, dash usage standardized. *Gap: "State College, PA" not yet consistent in all H1 tags*
 
+### Phase 1.5 — POST-UPDATE URGENT ITEMS (New from Feb 21 data) 🔴
+Impact: Directly address declining metrics and unlock rich results
+
+7. 🔴 **Submit all 12 URLs for recrawl** in Google Search Console — Title/meta rewrites and JSON-LD won't take effect until Google recrawls. This is the single most impactful action right now.
+8. 🔴 **Validate JSON-LD via Google Rich Results Test** — Search Appearance is empty in both exports. Verify structured data parses correctly before assuming Google will generate rich results.
+9. 🔴 **Fix Membership page content** — CTR dropped from 0.27% → 0.08% despite having 1,281 impressions in 3 months. Page has only 2 sentences. Add value-reinforcement section, pricing comparison table, "first class free" hook, and FAQ.
+10. 🔴 **Fix Contact page content** — CTR at 0.18% with 1,138 impressions. Add "What to Expect on Your First Visit" section, embedded schedule summary, and mini-FAQ.
+11. 🔴 **Fix Gallery page content** — CTR at 0.25% with 1,206 impressions. Add introductory narrative and descriptive captions with keywords.
+12. ⚠️ **Monitor MMA page post-recrawl** — CTR declined from 0.76% → 0.45% but we rewrote the page content. Need Google to recrawl before evaluating whether the rewrite improved things.
+
 ### Phase 2 — Content Gaps (Partially Addressed)
 
-7. ❌ **Create About / Coach Bios page** — Not yet created *(Person schema added as `founder` in main JSON-LD as interim)*
-8. ❌ **Create Penn State page or section** — Not yet created
-9. ❌ **Create Kickboxing / Muay Thai page** — Not yet created
-10. ✅ **Add beginner-focused content** to Boxing and MMA pages — Boxing: "All Levels Welcome", "No Sparring Required", "What to Expect" section. MMA: "Who Should Train MMA?", "Beginner-Friendly" card, FAQ answers.
-11. ✅ **Enrich homepage content** — "The Legacy Experience" programs overview, Centre County/Penn State references, USA Boxing LBC badge, coach credentials
-12. ⚠️ **Enrich thin pages** — Dash usage standardized sitewide. *Remaining: Membership, Contact, and Gallery pages still have thin content; MMA FAQ verbosity not yet tightened*
+13. ❌ **Create About / Coach Bios page** — Not yet created *(Person schema added as `founder` in main JSON-LD as interim)*. "derek roth" query at 3.80% CTR / 79 impressions (3mo) confirms demand.
+14. ❌ **Create Penn State page or section** — Not yet created. "penn state boxing" (104 imp), "psu boxing" (57), "penn state mma" (51) = **212 impressions in 3 months, 0 clicks.** This is the single biggest content gap by impression volume.
+15. ❌ **Create Kickboxing / Muay Thai page** — Not yet created. Now **ranking #1 for "kickboxing"** (pos 1.38) with zero dedicated content. A page will likely dominate the entire kickboxing/muay thai query cluster.
+16. ✅ **Add beginner-focused content** to Boxing and MMA pages — Boxing: "All Levels Welcome", "No Sparring Required", "What to Expect" section. MMA: "Who Should Train MMA?", "Beginner-Friendly" card, FAQ answers.
+17. ✅ **Enrich homepage content** — "The Legacy Experience" programs overview, Centre County/Penn State references, USA Boxing LBC badge, coach credentials
+18. ⚠️ **Enrich thin pages** — Dash usage standardized sitewide. *Remaining: Membership (#9 above), Contact (#10), Gallery (#11). MMA FAQ verbosity not yet tightened.*
 
 ### Phase 3 — Expansion Pages (Not Started)
 
-13. ❌ **Create Women's Boxing page**
-14. ❌ **Create Self-Defense page**
-15. ❌ **Consider Blog / News section**
+19. ❌ **Create Women's Boxing page**
+20. ❌ **Create Self-Defense page** — "self defense classes near me" has 16 impressions in 3 months at position 7.81
+21. ❌ **Consider Blog / News section**
 
 ### Phase 4 — Technical & Schema ✅ MOSTLY COMPLETE
 
-16. ✅ **Add Course schema** to boxing, MMA, and youth-programs pages
-17. ⚠️ **Add FAQPage schema** — Done on MMA page only
-18. ✅ **Add BreadcrumbList schema** — All 8 subpages
-19. ✅ **Add Person schema** for coaches — Coach Derek Roth as `founder` in main JSON-LD with credentials, certifications, awards
-20. ❌ **Optimize schedule page** for featured snippet
-21. ❌ **Image SEO audit** — alt text, dimensions, structured data
+22. ✅ **Add Course schema** to boxing, MMA, and youth-programs pages
+23. ⚠️ **Add FAQPage schema** — Done on MMA page and boxing page and keystone games event page only. *Consider adding to homepage.*
+24. ✅ **Add BreadcrumbList schema** — All subpages
+25. ✅ **Add Person schema** for coaches — Coach Derek Roth as `founder` in main JSON-LD with credentials, certifications, awards
+26. ❌ **Optimize schedule page** for featured snippet — Schedule page position regressed (9.49 → 11.45), CTR dropped to 0.17%
+27. ❌ **Image SEO audit** — alt text, dimensions, structured data
+28. ✅ **JSON-LD on all pages** — Build-time static injection via custom Vite plugin; SportsActivityLocation, Course, FAQPage, Article, SportsEvent, WebSite, Service, BreadcrumbList
+29. 🔴 **Trigger Google recrawl** — Needed to activate all JSON-LD and meta tag changes (see Phase 1.5)
 
 ---
 
 ## 8. KPIs to Track
 
-| Metric | Current Baseline | Adjusted Baseline (noise-corrected) | 3-Month Target | 6-Month Target |
-|--------|-----------------|--------------------------------------|----------------|----------------|
-| Total Clicks/day | ~8 | ~8 (clicks already real) | 15 | 25 |
-| Avg Position (all) | 12.4 | ~6 (for target queries) | 5 | 3-4 |
-| Homepage CTR | 6.15% | ~8-10% (target queries) | 12% | 18% |
-| Gallery CTR | 0.17% | ~0.3-0.5% (still low) | 3% | 5% |
-| Membership CTR | 0.10% | ~0.2-0.3% (still low) | 3% | 5% |
-| Contact CTR | 0.15% | ~0.3-0.5% (still low) | 3% | 5% |
-| MMA CTR | 0.45% | ~0.8-1% (still low) | 3% | 5% |
-| Pages ranking top 5 | 3 | 5-6 (more than we thought) | 7 | 9+ |
-| Indexed pages | 9 | 9 | 14 | 17+ |
+| Metric | Original Baseline (Feb 14) | Updated Baseline (Feb 21) | Post-Update Signal (Feb 15-19) | 3-Month Target | 6-Month Target |
+|--------|-----------------------------|--------------------------|-------------------------------|----------------|----------------|
+| Total Clicks/day | ~7 | 7.4 (3mo avg) | **9.0** (+27%) | 15 | 25 |
+| Avg CTR (all) | ~5.1% | 4.75% (3mo) | **6.7%** (+63%) | 7% | 10% |
+| Homepage position | 12.4 | 10.89 (3mo) | — | 8 | 6 |
+| Gallery CTR | 0.17% | 0.25% | — | 3% | 5% |
+| Membership CTR | 0.10% | **0.08%** (🔴 worse) | — | 3% | 5% |
+| Contact CTR | 0.15% | **0.18%** | — | 3% | 5% |
+| MMA CTR | 0.45% | **0.45%** (no change) | — | 3% | 5% |
+| "boxing state college" CTR | 28.0% | **40.4%** (🟢) | — | 45% | 50% |
+| "mma state college" CTR | 2.4% | **1.56%** (🔴) | — | 8% | 15% |
+| Rich results | 0 | **0** (unchanged) | — | 2+ | 5+ |
+| Indexed pages | 9 | **12** (Keystone Games + article + articles index) | — | 16 | 19+ |
+| Pages ranking top 5 | ~5-6 | ~5-6 | — | 8 | 11+ |
+| Keystone Games position | N/A | **6.36** | — | 3 | 1-2 |
 
 ---
 
 ## 9. Appendix — Query Cluster Mapping
 
 ### Cluster: Boxing (core)
-`boxing gyms near me` (262) + `boxing near me` (117) + `boxing gym near me` (108) + `boxing classes near me` (136) + `boxing gym` (42) + `boxing classes` (27) + `boxing lessons near me` (39) + `boxing` (160)
-**Total: ~891 impressions** → Landing: Boxing page + Homepage
+`boxing gyms near me` (372/100) + `boxing near me` (201/43) + `boxing gym near me` (149/48) + `boxing classes near me` (189/56) + `boxing gym` (76/12) + `boxing classes` (34/10) + `boxing lessons near me` (53/20) + `boxing` (187/117)
+*(Format: lifetime impressions / 3-month impressions)*
+**Lifetime total: ~1,261 impressions | 3mo total: ~406** → Landing: Boxing page + Homepage
+
+> Boxing queries are showing clear CTR improvements across the board. "boxing classes near me" moved from position 5.08 to 3.82 with CTR nearly doubling. The rewritten title/meta tags appear to be working for boxing-specific queries.
 
 ### Cluster: MMA
-`mma gyms near me` (181) + `mma state college` (252) + `mma near me` (84) + `mma classes near me` (34) + `mma gym near me` (18) + `mma` (9) + `penn state mma` (61) + `state college mma` (61)
-**Total: ~700 impressions** → Landing: MMA page (rewrite around Kosen Judo system)
+`mma gyms near me` (229/85) + `mma state college` (356/128) + `mma near me` (158/39) + `mma classes near me` (40/14) + `mma gym near me` (23/6) + `mma` (12/5) + `penn state mma` (66/51) + `state college mma` (104/24)
+*(Format: lifetime impressions / 3-month impressions)*
+**Lifetime total: ~988 impressions | 3mo total: ~352** → Landing: MMA page (rewrite around Kosen Judo system)
 
-**Strategy:** Rewrite MMA page to lead with "Boxing Striking + Kosen Judo Grappling + Muay Thai = Complete MMA." Cross-link to Kosen Judo page (grappling deep dive) and Kickboxing page (striking). The Kosen Judo angle is what makes this page different from every other MMA gym's page — lean into it hard.
+> 🔴 **MMA cluster is the biggest problem.** "mma state college" CTR dropped from 4.49% to 1.56% despite stable position. The MMA page content rewrite hasn't been recrawled yet. This cluster has the highest impression volume of any non-boxing cluster but the worst conversion.
+
+**Strategy:** MMA page has been rewritten to lead with "Boxing Striking + Kosen Judo Grappling + Muay Thai = Complete MMA." Cross-link to Kosen Judo page (grappling deep dive) and Kickboxing page (striking). **Priority: trigger recrawl immediately to activate the new content.**
 
 ### Cluster: Youth/Kids
 `boxing classes for kids near me` (15) + `kids boxing classes near me` (19) + `boxing for kids near me` (13) + `kids boxing near me` (9) + `kids boxing` (5) + `youth boxing near me` (8) + `teen boxing classes` (2) + `mma for kids near me` (4) + `kids mma classes near me` (1)
 **Total: ~76 impressions** → Landing: Youth Programs page
 
 ### Cluster: BJJ/Jiu-Jitsu/Judo/Kosen Judo (THE Kosen Judo Capture Zone)
-`bjj near me` (26) + `jiu jitsu near me` (84) + `jiu jitsu state college` (86) + `brazilian jiu jitsu near me` (11) + `bjj gyms near me` (7) + `jiujitsu near me` (2) + `judo` (32) + `judo near me` (16) + `gracie jiu jitsu` (2) + `judo gyms near me` (3) + `judo training` (2) + `jiu jitsu classes near me` (2) + `jiu jitsu gyms near me` (3) + `jiu jitsu schools near me` (2)
-**Total: ~278 impressions** → Landing: Kosen Judo page (NEW, Priority 1) + MMA page (enriched)
+`bjj near me` (28/8) + `jiu jitsu near me` (96/37) + `jiu jitsu state college` (107/51) + `brazilian jiu jitsu near me` (11/1) + `bjj gyms near me` (9/5) + `jiujitsu near me` (2/2) + `judo` (39/9) + `judo near me` (22/5) + `gracie jiu jitsu` (2/2) + `judo gyms near me` (3/3) + `judo training` (2/1) + `jiu jitsu classes near me` (4/1) + `jiu jitsu gyms near me` (3/3) + `jiu jitsu schools near me` (2/2)
+*(Format: lifetime impressions / 3-month impressions)*
+**Lifetime total: ~330 impressions | 3mo total: ~130** → Landing: Kosen Judo page (NEW, Priority 1) + MMA page (enriched)
+
+> 🟢 **Judo positions are improving organically.** "judo" moved from 6.05 to 4.11, "jiu jitsu near me" from 7.77 to 5.81. This means our MMA page content (which mentions Judo) is strengthening relevance for these queries even before a dedicated Judo page exists. A dedicated page will likely push these to top 3.
 
 **Strategy:** Kosen Judo content captures BOTH judo AND BJJ/grappling searchers because:
 1. Judo seekers find a ground-focused judo style (what many actually want vs. Olympic rules)
@@ -675,14 +820,20 @@ Impact: Highest CTR improvement + plant the strategic differentiator
 No other gym in the area can compete for these queries with authentic Kosen Judo credentials.
 
 ### Cluster: Muay Thai / Kickboxing
-`kickboxing near me` (15) + `muay thai near me` (44) + `kickboxing` (26) + `muay thai` (18) + `kickboxing state college` (7) + `muay thai state college pa` (6) + `kickboxing classes near me` (8) + `cardio kickboxing` (8) + `muay thai gyms near me` (13) + `kick boxing classes near me` (7)
-**Total: ~152 impressions** → Landing: None! (Critical gap)
+`kickboxing near me` (25/10) + `muay thai near me` (57/18) + `kickboxing` (29/16) + `muay thai` (22/10) + `kickboxing state college` (7/*) + `muay thai state college pa` (35/*) + `kickboxing classes near me` (13/2) + `cardio kickboxing` (8/*) + `muay thai gyms near me` (15/2) + `kick boxing classes near me` (11/4)
+*(Format: lifetime impressions / 3-month impressions. * = not in top 3mo queries)*
+**Lifetime total: ~222 impressions** → Landing: None! (Critical gap)
+
+> 🟢 **Kickboxing position improved to #1** (1.38) with zero dedicated content. This is the strongest "low-hanging fruit" content gap: we're already ranking #1 for a keyword cluster with no page. Creating a page is virtually guaranteed to capture clicks.
 
 ### Cluster: Penn State / College
 
-**Real opportunity (Penn State-specific):**
-`penn state boxing` (115) + `psu boxing` (77) + `penn state mma` (61) + `penn state boxing club` (37) + `penn state mma club` (29) + `psu boxing club` (26) + `penn state bjj club` (11) + `penn state jiu jitsu` (8) + `penn state club boxing` (6) + `does penn state have boxing` (2) + `mma psu` (2)
-**Total: ~374 impressions** → Landing: None! (Genuine massive gap)
+**Real opportunity (Penn State-specific) — updated with 3mo data:**
+`penn state boxing` (137/104) + `psu boxing` (98/57) + `penn state mma` (66/51) + `penn state boxing club` (45/35) + `penn state mma club` (29/13) + `psu boxing club` (35/21) + `penn state bjj club` (**/12) + `penn state jiu jitsu` (10/8) + `penn state club boxing` (7/7) + `does penn state have boxing` (2/2) + `mma psu` (**/2)
+*(Format: lifetime impressions / 3-month impressions)*
+**Lifetime total: ~450+ impressions | 3mo total: ~312** → Landing: None! (Genuine massive gap)
+
+> 🔴 **Penn State queries represent the largest uncaptured audience.** 312 impressions in 3 months with ZERO clicks. The 3-month to lifetime ratio (312/450 = ~69%) shows this demand is concentrated in the recent period (Penn State spring semester). This gap is **actively growing** and should be addressed before fall semester 2026 brings even more volume.
 
 **Informational noise (NCAA/general college boxing — low value):**
 `college boxing` (29) + `colleges with boxing` (22) + `boxing colleges` (21) + `colleges for boxing` (14) + `boxing collage` (12) + `what colleges have boxing` (12) + `colleges with boxing teams` (11) + `colleges with boxing programs` (10) + `college boxing teams` (7) + `boxing in college` (6) + `is there college boxing` (6) + `collegiate boxing` (5) + `boxing college` (5) + various others

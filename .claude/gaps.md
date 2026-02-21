@@ -1,6 +1,6 @@
 # Legacy Boxing — Current Gaps & Issues
 
-> Last updated: 2026-02-14
+> Last updated: 2026-02-21
 
 ## Critical Bugs — RESOLVED
 
@@ -125,6 +125,16 @@ No custom 404 page exists. Users hitting a broken link see a generic browser or 
 
 | Priority | Issue | Impact |
 |----------|-------|--------|
+| 🔴 **URGENT** | Trigger Google recrawl of all 12 URLs | All title/meta/JSON-LD changes invisible until recrawled |
+| 🔴 **URGENT** | Validate JSON-LD via Rich Results Test | Search Appearance is empty in GSC — need to verify data parses |
+| 🔴 **URGENT** | Fix Membership page thin content | 1,281 impressions @ 0.08% CTR — declining, worst-performing page |
+| 🔴 **URGENT** | Fix Contact page thin content | 1,138 impressions @ 0.18% CTR — declining |
+| 🔴 **URGENT** | Fix Gallery page thin content | 1,206 impressions @ 0.25% CTR — stagnant |
+| 🟡 Medium | Create Penn State / College page | 312 impressions in 3mo, 0 clicks — biggest content gap |
+| 🟡 Medium | Create Kickboxing / Muay Thai page | Ranking #1 for "kickboxing" with no page — guaranteed win |
+| 🟡 Medium | Create Kosen Judo page | Judo positions improving organically (6.05→4.11) — a page will dominate |
+| 🟡 Medium | Create About / Coach Bios page | "derek roth" 79 imp, Person schema only as interim |
+| 🟡 Medium | No page template system (#21) | Developer velocity for new pages |
 | ~~🔴 High~~ | ~~Font loading bug (#1)~~ | ✅ FIXED |
 | ~~🔴 High~~ | ~~JSON-LD non-functional (#2)~~ | ✅ FIXED |
 | ~~🔴 High~~ | ~~No `<main>` element (#7, #8)~~ | ✅ FIXED |
@@ -132,7 +142,6 @@ No custom 404 page exists. Users hitting a broken link see a generic browser or 
 | 🟡 Medium | Outdated banner (#11) | User confusion |
 | ~~🟡 Medium~~ | ~~No robots.txt (#6)~~ | ✅ FIXED |
 | ~~🟡 Medium~~ | ~~Gallery video bug (#15)~~ | ✅ FIXED |
-| 🟡 Medium | No page template system (#21) | Developer velocity for new pages |
 | 🟢 Low | Asset naming (#20) | Maintainability |
 | 🟢 Low | Unused assets (#19) | Bundle/deploy size |
 | ~~🟢 Low~~ | ~~Alt text typos (#13)~~ | ✅ FIXED |
