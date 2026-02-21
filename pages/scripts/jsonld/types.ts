@@ -39,6 +39,7 @@ export interface Organization {
   name: string;
   url?: string;
   sameAs?: string;
+  logo?: string;
 }
 
 export interface Offer {
@@ -71,7 +72,8 @@ export interface SportsEvent {
   organizer?: Organization;
   superEvent?: NestedSportsEvent;
   offers?: Offer;
-  image?: string;
+  image?: string | string[];
+  performer?: Organization;
 }
 
 /**
@@ -124,6 +126,10 @@ export interface FAQPage {
 
 // ─── Article (Google-required: headline, datePublished, author) ──────────────
 
+/**
+ * Google requires `image` for Article rich results.
+ * `publisher` must include `logo` for the knowledge panel.
+ */
 export interface Article {
   '@context': 'https://schema.org';
   '@type': 'Article' | 'NewsArticle' | 'BlogPosting';
@@ -132,9 +138,16 @@ export interface Article {
   datePublished: string;
   dateModified?: string;
   author: Organization | { '@type': 'Person'; name: string };
-  publisher?: Organization | { '@type': 'Organization'; name: string; url?: string };
+  publisher:
+    | Organization
+    | {
+        '@type': 'Organization';
+        name: string;
+        url?: string;
+        logo?: string | { '@type': 'ImageObject'; url: string };
+      };
   mainEntityOfPage?: { '@type': 'WebPage'; '@id': string };
-  image?: string;
+  image: string | string[];
 }
 
 // ─── BreadcrumbList ──────────────────────────────────────────────────────────
@@ -152,7 +165,29 @@ export interface BreadcrumbList {
   itemListElement: ListItem[];
 }
 
-// ─── Union type for injectJsonLd parameter ───────────────────────────────────
+// ─── WebSite (site identity signal) ──────────────────────────────────────────
+
+export interface WebSite {
+  '@context': 'https://schema.org';
+  '@type': 'WebSite';
+  name: string;
+  url: string;
+}
+
+// ─── Service (private training, 1-on-1 coaching) ────────────────────────────
+
+export interface Service {
+  '@context': 'https://schema.org';
+  '@type': 'Service';
+  name: string;
+  description: string;
+  provider: Organization;
+  areaServed?: string;
+  serviceType?: string;
+  offers?: Offer;
+}
+
+// ─── Union type for schema exports ───────────────────────────────────────────
 
 export type JsonLdSchema =
   | SportsEvent
@@ -160,4 +195,6 @@ export type JsonLdSchema =
   | FAQPage
   | Article
   | BreadcrumbList
+  | WebSite
+  | Service
   | Record<string, unknown>;

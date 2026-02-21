@@ -27,7 +27,9 @@ export const place = {
 export const organization = {
   '@type': 'Organization' as const,
   name: BUSINESS_NAME,
+  url: SITE_URL,
   sameAs: SITE_URL,
+  logo: `${SITE_URL}/legacy-boxing-logo.webp`,
 };
 
 export const courseLocation = {

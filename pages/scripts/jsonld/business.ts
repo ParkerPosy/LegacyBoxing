@@ -10,7 +10,7 @@ export const businessSchema = {
   name: BUSINESS_NAME,
   alternateName: 'Legacy Boxing and Combat Sports Academy',
   description:
-    'Legacy Boxing & Combat Sports Academy is a premier MMA and boxing gym in State College, PA, serving Centre County and Penn State students. We offer structured classes in boxing, women\u2019s boxing, youth boxing (ages 8\u201316), and real mixed martial arts for adults and teens. Our MMA program is built on Kosen Judo grappling, Muay Thai striking, and wrestling \u2013 a system that sets us apart from every other gym in the area. All classes are led by USA Boxing and USA Judo certified coaches, including the head coach of the Penn State Boxing Club. Private training is available for beginners, athletes, and competitive fighters. Call or visit today \u2013 your first class is free.',
+    'Legacy Boxing & Combat Sports Academy is a premier MMA and boxing gym in State College, PA, serving Centre County and Penn State students. We offer structured classes in boxing, youth boxing (ages 8–16), and real mixed martial arts for adults and teens. Our MMA program combines striking, grappling, and conditioning with techniques from Muay Thai, Brazilian Jiu-Jitsu (BJJ), Judo, and kickboxing. All classes are led by USA Boxing-certified coaches, including the head coach of the Penn State Boxing Team. Private training is available for beginners, athletes, and competitive fighters. Train with expert coaches and build real skills in a safe, supportive environment. Call or visit today – your first class is free.',
   image: `${SITE_URL}/og-image.png`,
   logo: `${SITE_URL}/legacy-boxing-logo.webp`,
   url: SITE_URL,
@@ -33,6 +33,10 @@ export const businessSchema = {
     { '@type': 'City', name: 'Centre Hall, PA' },
     { '@type': 'City', name: 'Milesburg, PA' },
     { '@type': 'City', name: 'Julian, PA' },
+    { '@type': 'AdministrativeArea', name: 'Patton Township, PA' },
+    { '@type': 'AdministrativeArea', name: 'College Township, PA' },
+    { '@type': 'AdministrativeArea', name: 'Ferguson Township, PA' },
+    { '@type': 'City', name: 'Houserville, PA' },
   ],
   openingHoursSpecification: [
     {
@@ -60,7 +64,6 @@ export const businessSchema = {
       closes: '13:30',
     },
   ],
-  priceRange: '$60\u2013$125/month',
   currenciesAccepted: 'USD',
   paymentAccepted: 'Cash, Credit Card, Debit Card, Check, Visa, MasterCard',
   founder: {
@@ -155,7 +158,7 @@ export const businessSchema = {
       '@type': 'Offer',
       name: 'Youth Boxing Program',
       description:
-        'Safe, structured boxing classes for ages 8\u201316. Build confidence, coordination, and real technique.',
+        'Safe, structured boxing classes for ages 8–16. Build confidence, coordination, and real technique.',
       price: '60.00',
       priceCurrency: 'USD',
     },

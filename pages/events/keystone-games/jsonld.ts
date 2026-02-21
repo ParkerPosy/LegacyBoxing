@@ -12,6 +12,7 @@ const keystoneEvent: SportsEvent = {
   endDate: '2026-08-02',
   eventStatus: 'https://schema.org/EventScheduled',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  image: `${SITE_URL}/og-image.png`,
   location: {
     '@type': 'Place',
     name: BUSINESS_NAME,
@@ -51,6 +52,9 @@ const keystoneEvent: SportsEvent = {
     '@type': 'Offer',
     url: 'https://event.racereach.com/keysg-boxing',
     availability: 'https://schema.org/InStock',
+    price: '45.00',
+    priceCurrency: 'USD',
+    description: 'Open & Masters divisions $45; Youth divisions $35',
   },
 };
 
@@ -63,7 +67,7 @@ const keystoneFaq: FAQPage = {
       name: 'What is the State Games of America?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The State Games of America is the nation\u2019s largest multi-sport Olympic-style event for amateur athletes. In 2026 it will be hosted in State College, PA, featuring 50+ sports and thousands of competitors from across the country. The Combat Sports Showcase takes place at Legacy Boxing (2820 East College Ave, Suite F).',
+        text: 'The State Games of America is the nation\'s largest multi-sport Olympic-style event for amateur athletes. In 2026 it will be hosted in State College, PA, featuring 50+ sports and thousands of competitors from across the country. The Combat Sports Showcase takes place at Legacy Boxing (2820 East College Ave, Suite F).',
       },
     },
     {

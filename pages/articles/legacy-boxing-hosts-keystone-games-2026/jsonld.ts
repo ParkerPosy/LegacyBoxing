@@ -9,6 +9,7 @@ const keystoneArticle: Article = {
   headline: 'Legacy Boxing to Host Boxing & MMA at the 2026 State Games of America',
   description: `${BUSINESS_NAME} has been selected to host the Combat Sports Showcase at the 2026 State Games of America in State College, PA.`,
   datePublished: '2026-02-14',
+  image: `${SITE_URL}/og-image.png`,
   author: {
     '@type': 'Organization',
     name: BUSINESS_NAME,
@@ -18,6 +19,7 @@ const keystoneArticle: Article = {
     '@type': 'Organization',
     name: BUSINESS_NAME,
     url: SITE_URL,
+    logo: { '@type': 'ImageObject', url: `${SITE_URL}/legacy-boxing-logo.webp` },
   },
   mainEntityOfPage: {
     '@type': 'WebPage',

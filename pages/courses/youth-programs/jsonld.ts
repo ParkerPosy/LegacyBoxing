@@ -8,7 +8,7 @@ const youthCourse: Course = {
   '@type': 'Course',
   name: 'Youth Boxing Program',
   description:
-    'Safe, structured boxing classes for kids ages 8\u201316. Build confidence, discipline, coordination, and real boxing technique in a supportive environment.',
+    'Safe, structured boxing classes for kids ages 8–16. Build confidence, discipline, coordination, and real boxing technique in a supportive environment.',
   provider: organization,
   hasCourseInstance: {
     '@type': 'CourseInstance',
@@ -20,6 +20,7 @@ const youthCourse: Course = {
     price: '60.00',
     priceCurrency: 'USD',
     category: 'Monthly Membership',
+    availability: 'https://schema.org/InStock',
   },
 };
 
