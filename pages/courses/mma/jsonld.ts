@@ -6,9 +6,9 @@ import type { Course, FAQPage } from '../../scripts/jsonld/types';
 const mmaCourse: Course = {
   '@context': 'https://schema.org',
   '@type': 'Course',
-  name: 'MMA Classes – Kosen Judo, Muay Thai & Wrestling',
+  name: 'MMA Classes in State College, PA – Mixed Martial Arts Training',
   description:
-    'Train real MMA built on Kosen Judo grappling, Muay Thai striking, and wrestling. USA Judo certified coaching. Beginner-friendly with structured progression.',
+    'Mixed martial arts classes from $80/mo in State College near Penn State. Boxing, Judo & Muay Thai in one complete MMA system. USA Judo certified coach. First class free.',
   provider: organization,
   hasCourseInstance: {
     '@type': 'CourseInstance',

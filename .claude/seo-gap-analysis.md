@@ -430,28 +430,89 @@ The homepage needs to naturally incorporate these high-value keywords that it cu
 - [ ] FAQ accordion with schema markup — *Not yet on homepage*
 - [x] "Serving State College, Penn State & Centre County" content block — *"Train with USA Boxing certified coaches… in Centre County" and "boxing gym in State College" present*
 
-### 4B. MMA Page — Highest Impression Count, Lowest CTR — THE Kosen Judo Opportunity
+### 4B. MMA Page — Highest Impression Count, Lowest CTR — Competitive Analysis
 
-The MMA page gets 4,639 impressions (most of any subpage) but only 0.45% CTR. This is our biggest single-page improvement opportunity.
+The MMA page gets 5,673 lifetime impressions (2,451 in 3 months) — most of any subpage — but only **0.45% CTR** (declining from 0.76%). This is our biggest single-page problem and the data now shows why.
 
-Ranking queries for this page likely include: "mma gyms near me" (181 imp), "mma state college" (252 imp), "mma near me" (84 imp), "jiu jitsu near me" (84 imp), "muay thai near me" (44 imp), "mma classes near me" (34 imp)
+#### Competitor Landscape for "mma state college"
 
-**The Problem:** The MMA page is generic. It doesn't tell searchers why Legacy's MMA program is different from any other MMA gym. The answer is Kosen Judo — but the page doesn't feature it.
+| Rank | Competitor | Domain Authority Signal |
+|------|-----------|----------------------|
+| **#1** | **Central PA MMA (cpamma.com)** | 10+ years, 500+ Google reviews, sponsors PSU MMA/BJJ/Muay Thai clubs, 10,000 sq ft with ring AND octagon, 60+ training hours/week, 15+ certified instructors |
+| **#2** | **Lombard MMA (lombardmma.com)** | 20+ years in State College, downtown location, trains NFL athletes, regulation cage, 5+ programs |
+| **#3-5** | **Legacy Boxing (legacy-boxing.com)** | Newer entrant, smaller facility, 2 MMA sessions/week, 1 testimonial, strong JSON-LD |
+| below | Directory listings (Yelp, boxinggyms.net, maps) | Aggregators |
 
-**Content Strategy — Rewrite Around Kosen Judo:**
-- [x] **Lead with the system:** "Boxing Striking + Kosen Judo Grappling + Muay Thai = Complete MMA." — *MMA page now structured around the three-pillar system; "Kosen Judo" appears in title and meta description but body content uses "Judo" only*
-- [x] **Explain Kosen Judo prominently:** — *FAQ section covers Judo/grappling approach; body mentions Judo foundations. Full "Kosen Judo" branding in meta tags*
-- [x] **Position Kosen Judo as the grappling advantage** — *MMA page positions Judo as the grappling component*
-- [x] **Coach credentials block** — *"Coach Derek Roth, nationally recognized… 30 years… Penn State Boxing Club… 2023 NCBA Coach of the Year" in body*
-- [x] **"What to Expect in Your First MMA Class" section** — *"Who Should Train MMA at Legacy?" section + "Beginner-Friendly" card + 7 FAQ answers*
+#### Why Competitors Outrank Us — Specific Gaps
+
+**1. Social Proof Gap (CRITICAL — likely #1 factor)**
+- **CPAMMA:** 500+ five-star Google reviews displayed prominently across 4+ pages with full review text. Ed Ruth (3X NCAA Wrestling Champion, Bellator Fighter) testimonial.
+- **LombardMMA:** 3 testimonials on homepage, trains NFL athletes
+- **Legacy MMA page:** 1 testimonial. One.
+- **Impact:** Google's local algorithm heavily weights review count. This single factor likely explains most of our position gap. Our MMA page looks empty next to CPAMMA's social proof wall.
+
+**2. Title Tag Keyword Mismatch**
+- **CPAMMA title:** "Central PA MMA - State College, PA / Penn State - Mixed Martial Arts" — hits MMA + State College + Penn State + Mixed Martial Arts in one title
+- **Legacy title:** "MMA Classes – Kosen Judo, Muay Thai & Wrestling | Legacy Boxing State College" — "Kosen Judo" is a niche term that zero searchers use. It takes up valuable title real estate where "Penn State" or "Mixed Martial Arts" would perform better.
+- **Impact:** When a user searches "mma state college" and sees our snippet, "Kosen Judo" is unfamiliar and may cause them to skip us. CPAMMA's title mirrors their exact search query.
+
+**3. Content Breadth — Separate Pages Per Discipline**
+- **CPAMMA has 6 separate program pages:** BJJ, Muay Thai, Reality Based MMA, Mixed Martial Arts, Women's Kickboxing, Youth — each targets different query clusters
+- **LombardMMA:** 5 programs with separate class descriptions
+- **Legacy:** 1 combined MMA page. All grappling, striking, and MMA content competes for crawl budget on a single URL.
+- **Impact:** CPAMMA captures "bjj state college", "muay thai state college", "kickboxing state college" with dedicated pages. We can't rank for these individual queries with one combined page.
+
+**4. Penn State Integration Gap**
+- **CPAMMA:** Dedicated `/psu-students/` page with PSU pricing ($99/mo), "400+ PSU students", sponsors PSU MMA Club + BJJ Club + Muay Thai Club, CATA bus stop mentioned, 20+ FAQ items about PSU student experience
+- **Legacy:** Mentions Penn State in body copy and Coach Derek leads PSU Boxing Club — but no dedicated PSU page or section
+- **Impact:** "penn state mma" (51 imp, pos 10.25) and "penn state mma club" (13 imp, pos 11.31) go to CPAMMA because they have a dedicated page. We have zero clicks on 312 Penn State impressions in 3 months.
+
+**5. Class Frequency Signal**
+- **CPAMMA:** "60+ hours of training per week, 7 days, morning through late night"
+- **LombardMMA:** Multiple classes daily
+- **Legacy MMA:** 2 sessions/week (Tues/Thurs 5:00–6:15 PM)
+- **Impact:** A searcher looking for "MMA State College" sees our schedule and finds 2 sessions per week. CPAMMA offers 60+ hours. This isn't just an SEO problem — it's a product signal that affects both click-through AND conversion.
+
+**6. Pricing Visibility**
+- **CPAMMA:** Full pricing on `/rates/` — PSU $99/mo, Standard $109/mo, All Access $159/mo
+- **Legacy:** $80/mo (actually cheaper!) but buried in membership page, not prominent in SERP snippet
+- **Impact:** Our price advantage is invisible. CPAMMA's higher prices make their program look premium; our lower price could be a competitive hook if surfaced.
+
+#### What We Do Better Than Competitors
+
+1. **JSON-LD structured data** — neither CPAMMA nor LombardMMA has Course, FAQPage, or BreadcrumbList schema. We have rich snippet eligibility they don't.
+2. **FAQ section with schema markup** — CPAMMA has FAQs but likely not in structured data
+3. **Clean, fast, modern website** — CPAMMA runs heavy WordPress; LombardMMA uses bloated Elementor
+4. **Kosen Judo differentiation** — unique positioning for organic content, just shouldn't dominate the SERP-facing title
+5. **Lower price point** — $80/mo vs $99-109/mo is a real advantage
+
+#### Revised Action Plan for MMA
+
+**Immediate (do now — title/meta rewrite):**
+- [ ] **Rewrite MMA title tag:** Remove "Kosen Judo" from title. Proposed: `MMA Classes in State College, PA | Mixed Martial Arts Near Penn State – Legacy Boxing`
+  - Hits: "MMA classes", "State College PA", "Mixed Martial Arts", "Near Penn State", brand name
+  - "Kosen Judo" stays in body content and meta description for differentiation without hurting CTR
+- [ ] **Rewrite MMA meta description:** Lead with social proof + price + query match. Proposed: `Mixed martial arts classes starting at $80/mo in State College. Boxing, Judo & Muay Thai in one complete MMA system. USA Judo certified coach. First class free.`
+  - Hits: price (cheaper than competitors), class types, certification, CTA
+- [ ] **Add 3-5 more testimonials** to MMA page from current students — even 3 named quotes would 4X our social proof
+
+**Short-term (create new pages):**
+- [ ] **Create Penn State / Students page** (`/pages/penn-state/`) — target 312 impressions of "penn state mma/boxing/bjj" queries with zero clicks
+- [ ] **Create Kickboxing/Muay Thai page** (`/pages/courses/kickboxing/`) — split striking content from MMA, target "kickboxing" queries where we already rank #1
+- [ ] **Create Kosen Judo / Grappling page** (`/pages/courses/judo/`) — split grappling content from MMA, target "judo near me" (pos 4.11) and "jiu jitsu state college" (51 imp) queries
+
+**Medium-term (content + social proof):**
+- [ ] **Implement Google Review collection strategy** — QR code at gym, post-class text messages, review request email sequence. Even reaching 50+ reviews would dramatically close the gap.
+- [ ] **Surface $80/mo pricing prominently** in MMA page hero or CTA section — competitive advantage vs CPAMMA's $99-109
+- [ ] **Add competition results / fighter showcase** — any wins, tournaments, Belt promotions to match CPAMMA's success stories
+- [ ] **Consider increasing MMA class frequency** if operationally possible — 2 sessions/week is a hard constraint that limits both product appeal and SEO competitiveness
+
+**Previously completed:**
+- [x] **Lead with the system:** "Boxing Striking + Kosen Judo Grappling + Muay Thai = Complete MMA." — *MMA page now structured around the three-pillar system*
+- [x] **Coach credentials block** — *Coach Derek Roth credentials in body*
+- [x] **"Who Should Train MMA at Legacy?" section** + "Beginner-Friendly" card + 7 FAQ answers
+- [x] **Cross-links** to Boxing, Private Training, Membership, Schedule
 - [ ] **Program breakdown table** — *Not implemented as a structured table*
-- [x] **Cross-links:**
-  - → ~~Kosen Judo page~~ (not created yet)
-  - → ~~Kickboxing/Muay Thai page~~ (not created yet)
-  - → Membership (pricing + free trial CTA) ✔
-  - → Schedule (class times) ✔
-  - → Boxing Classes ✔
-  - → Private Training ✔
 
 ### 4C. Boxing Page — Needs Beginner Content
 
@@ -797,8 +858,10 @@ Impact: Directly address declining metrics and unlock rich results
 **Lifetime total: ~988 impressions | 3mo total: ~352** → Landing: MMA page (rewrite around Kosen Judo system)
 
 > 🔴 **MMA cluster is the biggest problem.** "mma state college" CTR dropped from 4.49% to 1.56% despite stable position. The MMA page content rewrite hasn't been recrawled yet. This cluster has the highest impression volume of any non-boxing cluster but the worst conversion.
+>
+> **Competitive context (Feb 2026 analysis):** Central PA MMA (cpamma.com) dominates position #1 with 500+ Google reviews, dedicated PSU Students page, 6 separate program pages, and title tag that matches search queries exactly. Lombard MMA (lombardmma.com) holds #2 with 20+ years brand history. Legacy at #3-5 has the best structured data but weakest social proof (1 testimonial), a title tag with niche terminology ("Kosen Judo") searchers don't use, and only 2 MMA sessions/week vs CPAMMA's 60+ hours. Price advantage ($80 vs $99-109) is invisible in snippets.
 
-**Strategy:** MMA page has been rewritten to lead with "Boxing Striking + Kosen Judo Grappling + Muay Thai = Complete MMA." Cross-link to Kosen Judo page (grappling deep dive) and Kickboxing page (striking). **Priority: trigger recrawl immediately to activate the new content.**
+**Strategy:** Remove "Kosen Judo" from title tag (keep in body). Add "Penn State" and "Mixed Martial Arts" to title. Surface $80/mo pricing. Add 3-5 testimonials. Create separate Judo and Kickboxing pages to compete with CPAMMA's per-discipline page strategy. Build Google Reviews to close the 500-to-0 social proof gap. **Priority: trigger recrawl immediately to activate the new content.**
 
 ### Cluster: Youth/Kids
 `boxing classes for kids near me` (15) + `kids boxing classes near me` (19) + `boxing for kids near me` (13) + `kids boxing near me` (9) + `kids boxing` (5) + `youth boxing near me` (8) + `teen boxing classes` (2) + `mma for kids near me` (4) + `kids mma classes near me` (1)
