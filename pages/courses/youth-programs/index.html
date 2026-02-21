@@ -91,51 +91,10 @@
       name="description"
       content="Safe, structured boxing for kids ages 8–16 near Penn State. Build confidence, discipline & real skills. First class free."
     />
-    <load src="/pages/components/json-ld.html" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
-          { "@type": "ListItem", "position": 2, "name": "Youth Boxing Programs", "item": "https://www.legacy-boxing.com/pages/courses/youth-programs/" }
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Course",
-        "name": "Youth Boxing Program",
-        "description": "Safe, structured boxing classes for kids ages 8–16. Build confidence, discipline, coordination, and real boxing technique in a supportive environment.",
-        "provider": {
-          "@type": "Organization",
-          "name": "Legacy Boxing & Combat Sports Academy",
-          "sameAs": "https://www.legacy-boxing.com"
-        },
-        "hasCourseInstance": {
-          "@type": "CourseInstance",
-          "courseMode": "onsite",
-          "location": {
-            "@type": "Place",
-            "name": "Legacy Boxing & Combat Sports Academy",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "2820 E College Ave, Suite F",
-              "addressLocality": "State College",
-              "addressRegion": "PA",
-              "postalCode": "16801"
-            }
-          }
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "60.00",
-          "priceCurrency": "USD",
-          "category": "Monthly Membership"
-        }
-      }
-    </script>
+    <script
+      type="module"
+      src="/pages/courses/youth-programs/jsonld.ts"
+    ></script>
   </head>
 
   <body class="

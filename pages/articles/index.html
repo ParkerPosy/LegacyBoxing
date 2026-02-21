@@ -86,18 +86,10 @@
       name="description"
       content="Training tips, event coverage, and news from Legacy Boxing & Combat Sports Academy in State College, PA near Penn State."
     />
-    <load src="/pages/components/json-ld.html" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
-          { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://www.legacy-boxing.com/pages/articles/" }
-        ]
-      }
-    </script>
-
+    <script
+      type="module"
+      src="/pages/articles/jsonld.ts"
+    ></script>
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">

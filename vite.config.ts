@@ -5,6 +5,7 @@ import { VitePluginRadar } from 'vite-plugin-radar'
 import viteImagemin from 'vite-plugin-imagemin'
 import Sitemap from 'vite-plugin-sitemap'
 import injectHTML from 'vite-plugin-html-inject';
+import jsonld from './vite-plugin-jsonld';
 
 export default defineConfig(({ mode }) => ({
   appType: 'mpa',
@@ -17,6 +18,7 @@ export default defineConfig(({ mode }) => ({
       },
     }),
     injectHTML(),
+    jsonld(),
     viteImagemin({
       webp: {
         quality: 30,

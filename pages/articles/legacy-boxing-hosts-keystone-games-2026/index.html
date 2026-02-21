@@ -99,42 +99,10 @@
       name="description"
       content="Legacy Boxing & Combat Sports Academy has been selected to host the Combat Sports Showcase at the 2026 State Games of America in State College, PA. Here's what competitors and fans need to know."
     />
-    <load src="/pages/components/json-ld.html" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
-          { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://www.legacy-boxing.com/pages/articles/" },
-          { "@type": "ListItem", "position": 3, "name": "Legacy Boxing Hosts Keystone Games 2026", "item": "https://www.legacy-boxing.com/pages/articles/legacy-boxing-hosts-keystone-games-2026/" }
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Legacy Boxing to Host Boxing & MMA at the 2026 State Games of America",
-        "description": "Legacy Boxing & Combat Sports Academy has been selected to host the Combat Sports Showcase at the 2026 State Games of America in State College, PA.",
-        "datePublished": "2026-02-14",
-        "author": {
-          "@type": "Organization",
-          "name": "Legacy Boxing & Combat Sports Academy",
-          "url": "https://www.legacy-boxing.com"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Legacy Boxing & Combat Sports Academy",
-          "url": "https://www.legacy-boxing.com"
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://www.legacy-boxing.com/pages/articles/legacy-boxing-hosts-keystone-games-2026/"
-        }
-      }
-    </script>
-
+    <script
+      type="module"
+      src="/pages/articles/legacy-boxing-hosts-keystone-games-2026/jsonld.ts"
+    ></script>
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">

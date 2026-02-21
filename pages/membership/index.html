@@ -87,17 +87,10 @@
       name="description"
       content="Boxing $80/mo, MMA $80/mo, Youth $60/mo, or combo $125/mo. No contracts required. Try your first class free at Legacy Boxing in State College, PA."
     />
-    <load src="/pages/components/json-ld.html" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.legacy-boxing.com" },
-          { "@type": "ListItem", "position": 2, "name": "Membership & Pricing", "item": "https://www.legacy-boxing.com/pages/membership/" }
-        ]
-      }
-    </script>
+    <script
+      type="module"
+      src="/pages/membership/jsonld.ts"
+    ></script>
   </head>
 
   <body class="bg-slate-950 text-white flex flex-col min-h-screen">
