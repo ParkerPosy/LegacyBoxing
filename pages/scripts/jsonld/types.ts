@@ -170,8 +170,10 @@ export interface BreadcrumbList {
 export interface WebSite {
   '@context': 'https://schema.org';
   '@type': 'WebSite';
+  '@id'?: string;
   name: string;
   url: string;
+  publisher?: { '@id': string };
 }
 
 // ─── Service (private training, 1-on-1 coaching) ────────────────────────────
