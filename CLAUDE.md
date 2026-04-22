@@ -14,7 +14,7 @@ npm run lhci      # Build + Lighthouse CI audit (perf, a11y, SEO scores)
 
 **Always run `npm run check` after making changes.** It catches missing meta tags, broken internal links, and TypeScript errors before a build. JSON-LD schemas are also validated at compile time by `tsc`, so a schema type error is a check failure.
 
-Run `npm run lhci` when touching layout, images, or anything that could affect Core Web Vitals. Reports are saved to `.lighthouseci/` (gitignored). Thresholds: performance ≥ 0.9 (warn), accessibility ≥ 0.9 (error), SEO ≥ 0.9 (error).
+Run `npm run lhci` when touching layout, images, or anything that could affect Core Web Vitals. Reports are saved to `.lighthouseci/` (gitignored). Thresholds: performance ≥ 0.9 (warn), accessibility ≥ 0.9 (error), SEO ≥ 0.9 (error). Fonts are loaded from Google Fonts CDN (WOFF2) — do not switch to self-hosted TTF as it tanks the LCP score in Lighthouse's mobile simulation.
 
 ## Architecture
 
@@ -45,7 +45,7 @@ When adding a new page with structured data: create a `jsonld.ts` alongside the 
 **Tailwind CSS v4** — no `tailwind.config.*` file. All configuration is in `pages/style.css` via `@theme`:
 - `--color-boxing-red: #c40110` → use as `text-boxing-red`, `bg-boxing-red`, etc.
 - `--color-legacy-red: #6f1712`
-- Font: Inter variable font (preloaded, self-hosted in `pages/fonts/`)
+- Font: DM Sans loaded via Google Fonts `@import` at the top of `pages/style.css`
 
 ### JavaScript
 
@@ -53,7 +53,7 @@ Runtime JS is minimal and intentional. The only shipped script is `pages/scripts
 
 ### Adding a new page
 
-1. Create `pages/<section>/<name>/index.html` with full `<head>` (meta, OG, canonical, stylesheet, font preloads)
+1. Create `pages/<section>/<name>/index.html` with full `<head>` (meta, OG, canonical, stylesheet link)
 2. Create `pages/<section>/<name>/<name>.html` for body content
 3. Optionally create `pages/<section>/<name>/jsonld.ts` for structured data
 4. Register the entry in `vite.config.ts` under `rollupOptions.input`
