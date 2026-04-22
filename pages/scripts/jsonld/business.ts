@@ -16,6 +16,13 @@ export const businessSchema = {
   '@id': `${SITE_URL}/#organization`,
   url: SITE_URL,
   telephone: '+1-814-599-1682',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    reviewCount: '18',
+    bestRating: '5',
+    worstRating: '1',
+  },
   priceRange: '$$',
   email: 'legacyboxing@proton.me',
   foundingDate: '2024-01',

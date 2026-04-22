@@ -189,6 +189,20 @@ export interface Service {
   offers?: Offer;
 }
 
+// ─── VideoObject (Google-required: name, description, thumbnailUrl, uploadDate) ─
+
+export interface VideoObject {
+  '@context': 'https://schema.org';
+  '@type': 'VideoObject';
+  name: string;
+  description: string;
+  thumbnailUrl: string;
+  uploadDate: string;
+  contentUrl?: string;
+  duration?: string;
+  publisher?: Organization;
+}
+
 // ─── Union type for schema exports ───────────────────────────────────────────
 
 export type JsonLdSchema =
@@ -199,4 +213,5 @@ export type JsonLdSchema =
   | BreadcrumbList
   | WebSite
   | Service
+  | VideoObject
   | Record<string, unknown>;
