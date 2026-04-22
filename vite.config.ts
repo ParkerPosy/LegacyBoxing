@@ -46,6 +46,7 @@ export default defineConfig(({ mode }) => ({
         articles: resolve(__dirname, 'pages/articles/index.html'),
         articleKeystoneGames: resolve(__dirname, 'pages/articles/legacy-boxing-hosts-keystone-games-2026/index.html'),
         pricing: resolve(__dirname, 'pages/pricing/index.html'),
+        pennState: resolve(__dirname, 'pages/penn-state/index.html'),
       },
       output: {
         manualChunks(id) {

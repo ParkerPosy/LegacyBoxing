@@ -53,7 +53,7 @@ Runtime JS is minimal and intentional. The only shipped script is `pages/scripts
 2. Create `pages/<section>/<name>/<name>.html` for body content
 3. Optionally create `pages/<section>/<name>/jsonld.ts` for structured data
 4. Register the entry in `vite.config.ts` under `rollupOptions.input`
-5. Add the URL to the nav in `pages/components/header.html`
+5. **Add a link in `pages/components/header.html`** — either as a top-level `<li>` or inside the Courses/More dropdown. The last `<li>` in each dropdown must have `md:rounded-b-md` on its `<a>`; remove it from the previous last item when appending.
 
 ### Assets
 
@@ -69,3 +69,9 @@ Meta description formula: **Lead with the benefit, include a CTA, mention "first
 Each page has a co-located `jsonld.ts` that exports a `schemas` array. For course/service pages the standard set is `Course + FAQPage + BreadcrumbList`. For event pages use `SportsEvent + BreadcrumbList`. All types live in `pages/scripts/jsonld/types.ts` and are validated by `tsc` at build time — a bad schema is a build error.
 
 See `docs/seo.md` for the full SEO strategy, keyword data, and growth priorities.
+
+## Content writing style
+
+**En dash (–, U+2013):** use in meta titles as a qualifier separator (e.g. `Boxing Classes – Beginner to Competitive`) and in page titles. Never use a hyphen or em dash in these positions.
+
+**En dashes in body copy:** avoid them. Mid-sentence dashes read as AI-generated and should be rewritten as plain sentences instead. If you feel the urge to write `X — Y`, restructure the sentence so it does not need a dash at all. The en dash is reserved for titles; it has no place in paragraph text.
