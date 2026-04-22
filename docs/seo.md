@@ -2,11 +2,75 @@
 
 **Domain:** www.legacy-boxing.com  
 **Data source:** Google Search Console lifetime export (May 2025 – Apr 21, 2026)  
-**Last updated:** 2026-04-21
+**Last updated:** 2026-04-22
 
 ---
 
-## Current Standing (Lifetime Totals)
+## Meta Change Log
+
+This table is the primary decision record. Update it every time a title or description changes. Use it to attribute CTR shifts to specific changes when pulling new GSC data.
+
+Baseline CTR values are from the GSC lifetime export through 2026-04-21. Pages with two rows went through two iterations in quick succession — the Apr 21 pass was a broad rewrite; the Apr 22 pass refined the three worst performers further.
+
+| Page | Date | Old title | New title | Old description (summary) | New description (summary) | Baseline CTR | Baseline pos |
+|---|---|---|---|---|---|---|---|
+| `/pages/membership/` | 2026-04-21 | "Membership Plans from $60/mo \| Legacy Boxing State College" | "Boxing & MMA Memberships – No Contract \| Legacy Boxing State College" | Listed individual prices ($80/$80/$60/$125) | Price range $60–$125, month-to-month, cancel anytime | 0.29% | 6.15 |
+| `/pages/membership/` | 2026-04-22 | "Boxing & MMA Memberships – No Contract \| Legacy Boxing State College" | "Boxing & MMA Membership Pricing – No Contract, From $60/mo \| Legacy Boxing" | (see above) | "Train at State College's top boxing gym from $60/mo…first class always free" | 0.29% | 6.15 |
+| `/pages/courses/mma/` | 2026-04-21 | "MMA Classes in State College, PA \| Mixed Martial Arts Near Penn State – Legacy Boxing" | "MMA Classes Near Penn State – Boxing, Muay Thai & Judo \| Legacy Boxing" | Listed price ($80/mo), disciplines | Disciplines + "USA Judo certified coaches…first class free" | 0.71% | 11.71 |
+| `/pages/courses/mma/` | 2026-04-22 | "MMA Classes Near Penn State – Boxing, Muay Thai & Judo \| Legacy Boxing" | "MMA Classes in State College PA – Real Striking & Grappling \| Legacy Boxing" | (see above) | "Structured MMA…all levels welcome. First class free." | 0.71% | 11.71 |
+| `/pages/contact/` | 2026-04-21 | "Contact Us – First Class Free \| Legacy Boxing State College" | "Visit Legacy Boxing \| Hours, Address & Map \| State College PA" | Address + phone + drop-in | Address + Suite F + phone + "message us online" | 0.27% | 6.43 |
+| `/pages/contact/` | 2026-04-22 | "Visit Legacy Boxing \| Hours, Address & Map \| State College PA" | "Try Your First Class Free – Contact Legacy Boxing \| State College PA" | (see above) | CTA-first: drop by/call/message, no commitment | 0.27% | 6.43 |
+| `/pages/courses/boxing/` | 2026-04-21 | "Boxing Classes in State College, PA – Beginner to Competitive \| Legacy Boxing" | "Boxing Classes Near Penn State – Beginner to Competitive \| Legacy Boxing" | "Beginner, competitive & women's…all skill levels. First class free." | "USA Boxing certified coaching for all levels…experienced coaches. First class free." | 1.05% | 9.21 |
+| `/pages/courses/private-training/` | 2026-04-21 | "Private Training – $70/hr Boxing, MMA & Judo Coaching \| Legacy Boxing State College" | "1-on-1 Boxing & MMA Training Near Penn State – $70/hr \| Legacy Boxing" | "$70/hr…personalized training, real results" | "Coach Derek Roth — USA Boxing Coach of the Year 2023…personalized to your goals" | 1.35% | 7.22 |
+| `/pages/gallery/` | 2026-04-21 | "Photos & Videos \| Legacy Boxing & Combat Sports Academy" | "Inside Legacy Boxing \| Gym Photos & Fighter Highlights \| State College" | "See our fighters in action – training sessions, competition wins & youth boxing highlights" | "Explore the gym, meet the coaches, and see our fighters in action…youth classes & competition highlights" | 0.27% | 5.67 |
+| `/pages/courses/schedule/` | 2026-04-21 | "Class Schedule – Mon-Sat Boxing, MMA & Youth Classes \| Legacy Boxing State College" | "Boxing & MMA Class Schedule \| State College PA \| Legacy Boxing" | "See our Mon-Sat boxing, MMA, Muay Thai & youth class schedule…morning, evening & weekend sessions" | "Mon–Sat boxing, MMA, Muay Thai & youth classes…First class free — see times and join." | 0.51% | 9.09 |
+| `/pages/courses/youth-programs/` | 2026-04-21 | "Youth Boxing for Kids & Teens from $60/mo \| Legacy Boxing State College" | "Youth Boxing for Kids & Teens \| State College PA \| Legacy Boxing" | "Safe, structured boxing for kids ages 8–16…First class free." | "Structured boxing for ages 8–16 with certified coaches…From $60/mo. First class free." | 1.27% | 7.97 |
+
+**How to use this log:** After each GSC data pull, check the pages changed most recently first. If CTR has moved ≥1% absolute, note the new baseline and date inline. If a change shows no improvement after 90 days, the issue is position (content/authority), not the title — shift effort to content.
+
+---
+
+## Name Disambiguation: "Legacy Boxing" Is Not Unique
+
+This is the single most important context for interpreting GSC data. **"Legacy Boxing" as a brand name exists in at least:**
+
+- Legacy Boxing — Bayonne, NJ
+- Legacy Boxing — Vero Beach, FL
+- Legacy Boxing Academy — various other markets
+
+This means that raw brand query data in GSC is **polluted**. When Google shows legacy-boxing.com for the query "legacy boxing" to a user in New Jersey, that impression almost certainly ends in a bounce or a no-click. The 10.68% CTR on 3,175 impressions for "legacy boxing" sounds low for a brand term — and it is — but a significant fraction of those impressions are geographically irrelevant.
+
+### What this means for analysis
+
+**Do not treat "legacy boxing" CTR as a pure brand health signal.** Break it into two buckets:
+
+| Query type | Examples | Signal quality | How to interpret |
+|---|---|---|---|
+| Brand + location | "legacy boxing state college", "legacy boxing pa", "legacy boxing penn state" | High | These are real intent signals from your market |
+| Pure brand | "legacy boxing", "legacy boxing gym", "legacy boxing club" | Noisy | Includes disambiguation traffic; CTR will always be deflated |
+| Pure service + location | "boxing state college", "mma near me", "boxing classes penn state" | Highest | Cleanest signal; someone actively looking for what you offer |
+
+### Re-reading the homepage data
+
+Homepage: 1,844 clicks, 31,413 impressions, 5.87% CTR, position 12.29.
+
+Position 12.29 for the homepage is odd — it suggests the *homepage* ranks 12th for many queries, which means it's the catch-all. Clicks from disambiguation ("legacy boxing" searchers in NJ clicking out of curiosity) inflate click count but tank conversion. The 5.87% CTR on 31,413 impressions is actually reasonable when you account for the fact that ~30–40% of those impressions are disambiguation noise.
+
+**More useful signal:** Non-brand, location-qualified queries where the gym ranks top-5. These are the queries with clean intent:
+
+| Query | Clicks | Impressions | CTR | Position | Assessment |
+|---|---|---|---|---|---|
+| boxing state college | 50 | 194 | **25.77%** | 1.56 | Clean signal. Top of market. Protect this. |
+| boxing near me | 36 | 240 | 15.00% | 2.75 | High-intent local. Strong. |
+| boxing gyms near me | 55 | 449 | 12.25% | 4.68 | Good. Pos 4–5 floor is ~8–10% so this is performing. |
+| boxing classes near me | 24 | 236 | 10.17% | 4.78 | Healthy. Same bucket. |
+| mma state college | 17 | 415 | 4.10% | 4.44 | Low CTR for pos 4. MMA meta is the problem, not position. |
+
+The MMA page standout: 415 impressions, position 4.44, 4.10% CTR. At position 4, a good title should pull 8–12%. The meta rewrite (2026-04-22) targets this directly.
+
+---
+
+## Current Performance Snapshot (Lifetime, May 2025 – Apr 21, 2026)
 
 | Metric | Value |
 |---|---|
@@ -15,214 +79,166 @@
 | Overall CTR | ~3.5% |
 | Average position | ~12 |
 | Mobile share | **70%** (1,449 clicks) |
-| Desktop share | 28% (583 clicks) |
 
-**Traffic trajectory:** Near-zero at launch (May 2025) → ~150 impressions/day by Sep 2025 → ~200 impressions/day by Jan 2026. Growth is real but plateauing — needs strategic acceleration.
+**Traffic trajectory:** Near-zero at launch (May 2025) → ~150 impressions/day by Sep 2025 → ~200 impressions/day by Jan 2026. Growth is real but plateauing.
 
----
+### Page-level breakdown
 
-## The Core Problem: Homepage Dependency
-
-The homepage receives **1,844 of ~2,063 total clicks (89%)**. Every inner page combined accounts for only ~11% of clicks. This is fragile — it means inner pages are showing up in search but failing to earn clicks.
-
-| Page | Clicks | Impressions | CTR | Position |
-|---|---|---|---|---|
-| `/` (home) | 1,844 | 31,413 | 5.87% | 12.29 |
-| `/pages/courses/private-training/` | 57 | 4,209 | **1.35%** | 7.22 |
-| `/pages/courses/boxing/` | 49 | 4,650 | **1.05%** | 9.21 |
-| `/pages/courses/mma/` | 47 | 6,662 | **0.71%** | 11.71 |
-| `/pages/courses/youth-programs/` | 20 | 1,576 | 1.27% | 7.97 |
-| `/pages/membership/` | 9 | 3,119 | **0.29%** | 6.15 |
-| `/pages/contact/` | 8 | 3,006 | **0.27%** | 6.43 |
-| `/pages/gallery/` | 8 | 2,995 | **0.27%** | 5.67 |
-| `/pages/courses/schedule/` | 7 | 1,372 | 0.51% | 9.09 |
-| `/pages/events/keystone-games/` | 6 | 633 | 0.95% | 5.55 |
-| **`/pages/pricing/` (ghost page)** | 6 | 71 | **8.45%** | 5.70 |
-
-The membership page has 3,119 impressions at position 6.15 with a **0.29% CTR**. The typical floor for a legitimate fitness business at position 6 is 4–6%. Something is broken in the title/description — people are seeing it and choosing not to click.
-
-### Ghost page: `/pages/pricing/`
-This URL does not exist in the codebase but is still indexed and receiving clicks (8.45% CTR — the highest of any inner page). People clearly want a pricing page. **Priority action: either create this page or redirect it to `/pages/membership/`.**
-
----
-
-## Top Keyword Opportunities
-
-### Brand queries (should all be position 1–3)
-
-| Query | Clicks | Impressions | CTR | Position | Issue |
+| Page | Clicks | Impressions | CTR | Position | Status |
 |---|---|---|---|---|---|
-| legacy boxing | 339 | 3,175 | 10.68% | **7.81** | Own brand at position 8 — unacceptable |
-| legacy boxing gym | 41 | 1,227 | 3.34% | **9.71** | 1,227 impressions at position 10 |
-| legacy boxing club | 7 | 408 | 1.72% | **14.21** | Brand confusion with NJ/other gyms |
-| legacy mma | 3 | 139 | 2.16% | 23.38 | Completely off radar |
+| `/` (home) | 1,844 | 31,413 | 5.87% | 12.29 | See disambiguation note above |
+| `/pages/courses/private-training/` | 57 | 4,209 | 1.35% | 7.22 | Underperforming for pos 7 |
+| `/pages/courses/boxing/` | 49 | 4,650 | 1.05% | 9.21 | Low CTR at pos 9 |
+| `/pages/courses/mma/` | 47 | 6,662 | 0.71% | 11.71 | Meta rewritten 2026-04-22 |
+| `/pages/courses/youth-programs/` | 20 | 1,576 | 1.27% | 7.97 | Acceptable but can improve |
+| `/pages/membership/` | 9 | 3,119 | 0.29% | 6.15 | Meta rewritten 2026-04-22 |
+| `/pages/contact/` | 8 | 3,006 | 0.27% | 6.43 | Meta rewritten 2026-04-22 |
+| `/pages/gallery/` | 8 | 2,995 | 0.27% | 5.67 | Gallery rarely converts; acceptable |
+| `/pages/courses/schedule/` | 7 | 1,372 | 0.51% | 9.09 | Thin content page |
+| `/pages/events/keystone-games/` | 6 | 633 | 0.95% | 5.55 | Volume will spike pre-event |
+| `/pages/pricing/` (ghost) | 6 | 71 | **8.45%** | 5.70 | Redirected to /membership/ ✅ |
+| `/pages/penn-state/` | — | — | — | — | New page, indexing in progress |
+| `/pages/courses/womens-boxing/` | — | — | — | — | New page, indexing in progress |
 
-"Legacy boxing" sitting at position 7.81 for the gym's own brand name is the clearest signal that the Google Business Profile (GBP) is not fully optimized, or there's significant brand confusion with other "Legacy Boxing" entities (NJ, Vero Beach, etc. all appear in query data).
-
-### High-volume non-brand (strong performers to protect)
-
-| Query | Clicks | Impressions | CTR | Position |
-|---|---|---|---|---|
-| boxing gyms near me | 55 | 449 | 12.25% | 4.68 |
-| boxing near me | 36 | 240 | 15.00% | 2.75 |
-| boxing state college | 50 | 194 | 25.77% | **1.56** ✅ |
-| boxing classes near me | 24 | 236 | 10.17% | 4.78 |
-| mma state college | 17 | 415 | 4.10% | 4.44 |
-
-"Boxing state college" at position 1.56 with 25.77% CTR is the strongest non-brand result. Protect this and expand it.
-
-### High-impression, near-zero-click (biggest growth lever)
-
-These queries show the site is indexing for the right things but either the position is too low or the title/description isn't compelling enough:
-
-| Query | Impressions | Clicks | Position | Opportunity |
-|---|---|---|---|---|
-| mma state college | 415 | 17 | 4.44 | MMA page needs better meta — 4.1% CTR at pos 4 is terrible |
-| boxing gyms near me | 449 | 55 | 4.68 | Good CTR (12%) — hold and improve |
-| jiu jitsu state college | 124 | 6 | 9.19 | No dedicated page for Jiu Jitsu/Kosen Judo |
-| derek roth | 124 | 6 | 8.35 | No dedicated coach/about page |
-| muay thai near me | 75 | 1 | 6.45 | No dedicated Muay Thai page |
-| kickboxing near me | 32 | 4 | 4.97 | No dedicated kickboxing page |
-| penn state boxing | 176 | 0 | 16.86 | Huge Penn State audience untapped |
-| psu boxing | 127 | 1 | 14.04 | Same opportunity |
-| penn state mma | 86 | 1 | 9.81 | Same opportunity |
-| keystone games 2026 | 6 | 0 | 6.67 | Event page exists but needs optimization |
-| muay thai state college pa | 35 | 0 | 7.80 | No dedicated page |
+**The core problem:** 89% of clicks come from the homepage. Inner pages collectively underperform their positions. This is a CTR problem (titles/descriptions), not purely a ranking problem.
 
 ---
 
-## Priority Actions
+## Brand Query Analysis (Disambiguation-Aware)
 
-### P0 — Fix immediately
+| Query | Clicks | Impressions | CTR | Position | Real intent | Action |
+|---|---|---|---|---|---|---|
+| legacy boxing | 339 | 3,175 | 10.68% | 7.81 | Mixed — includes NJ/FL disambiguation | GBP optimization; pos 7.81 is still unacceptable even after removing noise |
+| legacy boxing state college | — | — | — | — | Pure local intent | Track separately; should be pos 1 |
+| legacy boxing gym | 41 | 1,227 | 3.34% | 9.71 | Mostly local intent but noisy | Position 10 hurts; GBP critical here |
+| legacy boxing club | 7 | 408 | 1.72% | 14.21 | Partially disambiguation (NJ uses "club") | Low priority |
+| legacy mma | 3 | 139 | 2.16% | 23.38 | Unclear — very low signal | Low priority |
 
-**1. Create or redirect `/pages/pricing/`**
-This URL has 8.45% CTR (highest of any inner page) and is currently a 404. Options:
-- Create a dedicated pricing/membership page at this URL
-- Add a server-side redirect from `/pages/pricing/` → `/pages/membership/`
-- At minimum, add it to the Vite MPA input pointing to the membership content
+The fact that "legacy boxing gym" has 1,227 impressions at position 9.71 (not 1–3) means Google is not confident this site is the authoritative result for the brand. This is a GBP completeness/authority problem, not an on-page SEO problem. The website cannot fix this alone.
 
-**2. Rewrite inner page meta titles and descriptions**
-The membership, contact, gallery, boxing, and MMA pages all have sub-1% CTR at positions where 4–8% is achievable. The titles are not giving people a reason to click.
-
-Current pattern (inferred from position/CTR data) appears generic. New pattern:
-
-```
-Title: [Specific benefit] Near Penn State | [Page type] | Legacy Boxing
-Description: [Lead with "first class free" or specific hook]. USA Boxing certified coaches. [2–3 sentence value prop]. Sign up today.
-```
-
-Examples:
-- MMA page: `"MMA Classes Near Penn State, State College PA | Legacy Boxing"` → `"Train MMA with UFC-level coaching near Penn State. Boxing, Muay Thai & Judo under one roof. First class free — join any weeknight class."`
-- Membership: `"Boxing Gym Memberships State College PA | Legacy Boxing"` → `"Flexible month-to-month memberships starting at [price]. No contracts, USA Boxing certified gym. First class free. See all plans."`
-- Gallery: Skip the gallery — make it convert. Redirect gallery clicks to contact or membership.
-
-**3. Add AggregateRating schema to homepage and course pages**
-Reviews/star ratings dramatically increase CTR. Even if pulled from Google reviews, structured AggregateRating schema can trigger rich snippet stars. Add a new type to `pages/scripts/jsonld/types.ts` and wire it into the homepage and boxing/MMA/youth schemas.
+**GBP actions that move brand position:**
+- Consistent NAP (Name, Address, Phone) across all citations
+- Regular posts (1–2/week minimum) with photos from classes
+- Actively respond to all reviews (signals active business)
+- Add services/products to GBP with keyword-rich descriptions
+- Upload training photos/videos directly to GBP
 
 ---
+
+## High-Impression, Low-Click Opportunities
+
+Queries where the site is visible but not winning clicks. These are the clearest growth levers.
+
+| Query | Impressions | Clicks | CTR | Position | Root cause | Next action |
+|---|---|---|---|---|---|---|
+| mma state college | 415 | 17 | 4.10% | 4.44 | Weak meta at pos 4 | Monitor post-rewrite (2026-04-22) |
+| boxing gyms near me | 449 | 55 | 12.25% | 4.68 | Performing well | Maintain; improve boxing page meta |
+| penn state boxing | 176 | 0 | 0% | 16.86 | No dedicated Penn State page | Penn State page created ✅ |
+| jiu jitsu state college | 124 | 6 | 4.84% | 9.19 | No dedicated page | Kosen Judo section on MMA page |
+| derek roth | 124 | 6 | 4.84% | 8.35 | No dedicated coach page | Future: coach bio page |
+| psu boxing | 127 | 1 | 0.79% | 14.04 | No Penn State page | Penn State page created ✅ |
+| penn state mma | 86 | 1 | 1.16% | 9.81 | No Penn State page | Penn State page created ✅ |
+| muay thai near me | 75 | 1 | 1.33% | 6.45 | No dedicated page | Add to MMA page prominently |
+| muay thai state college pa | 35 | 0 | 0% | 7.80 | No dedicated page | Add to MMA page; future standalone |
+| women's boxing classes | — | — | — | — | No dedicated page | Women's boxing page created ✅ |
+| kickboxing near me | 32 | 4 | 12.5% | 4.97 | No dedicated page | Add section on MMA page |
+| keystone games 2026 | 6 | 0 | 0% | 6.67 | Event page thin | Pre-event content push |
+
+---
+
+## Pages Created or Significantly Changed (2026)
+
+| Page | Date | Reason | Expected query targets |
+|---|---|---|---|
+| `/pages/penn-state/` | 2026 | Penn State queries at pos 14–16 with zero clicks | "penn state boxing", "psu boxing", "penn state mma" |
+| `/pages/courses/womens-boxing/` | 2026-04-22 | Zero women's boxing rankings despite offering | "women's boxing classes state college", "female boxing classes near me" |
+
+---
+
+## Priority Actions (Updated)
+
+### Completed ✅
+- Ghost `/pages/pricing/` redirect to `/pages/membership/`
+- AggregateRating schema (18 reviews, 5.0 stars) on business schema
+- VideoObject schema for all 5 training videos in gallery
+- Alt text audit across all pages
+- Meta rewrites: membership, MMA, contact (2026-04-22)
+- Penn State landing page
+- Women's boxing landing page
+
+### P0 — Immediate
+**Monitor the three meta rewrites.** Pull GSC data in 4 weeks (2026-05-22) and compare CTR on membership, MMA, and contact pages against baselines logged above. If no improvement, the issue is position (not title) and the fix shifts to content authority.
+
+**GBP completeness audit.** Brand position 7.81 is the most damaging single metric in the dataset. Fix: complete every GBP field, add 10+ photos, post weekly, respond to all 18 reviews if not already done.
 
 ### P1 — High impact, near-term
+**Muay Thai / Kosen Judo prominence on the MMA page.** "Muay thai near me" (75 imp, pos 6.45, 1 click) and "jiu jitsu state college" (124 imp) are landing on the MMA page but the page content buries these disciplines. Add a prominent discipline breakdown section to mma.html with explicit keyword mentions.
 
-**4. Build a Penn State landing page**
-"Penn State boxing" (176 impressions), "psu boxing" (127), "penn state mma" (86) all have zero or near-zero clicks. Create `/pages/penn-state/` targeting students specifically. This is a captive audience of ~47,000 potential members within walking/biking distance.
+**Boxing course page meta rewrite.** 4,650 impressions, position 9.21, 1.05% CTR. Same pattern as the pages already rewritten. Target: "boxing classes state college pa" + "beginner boxing near penn state".
 
-**5. Build dedicated discipline pages**
-Currently missing dedicated pages for:
-- Muay Thai (`/pages/courses/muay-thai/`)
-- Kosen Judo (`/pages/courses/judo/`)
-- Kickboxing (could be part of MMA or standalone)
-
-"Muay thai near me" (75 impressions), "jiu jitsu state college" (124 impressions), "kickboxing near me" (32 impressions) are all actively searched but landing on pages that only mention these disciplines tangentially.
-
-**6. Create a coach/about page for Derek Roth**
-"derek roth" gets 124 impressions and 6 clicks at position 8.35 with no dedicated page to land on. He's USA Boxing Coach of the Year 2023 — this is a unique trust signal that deserves its own page and Person schema.
-
-**7. Improve the Keystone Games event page**
-"Keystone games 2026" shows 6 impressions with 0 clicks at position 6.67. The event runs August 1–2, 2026 — as the date approaches, search volume will spike. The page needs:
-- SportsEvent schema already exists (✅) — verify it validates in Google Rich Results Test
-- Add registration/registration-link to the schema and page content
-- Target additional queries: "amateur boxing pennsylvania 2026", "ncba boxing 2026", "usa boxing state college"
-
----
+**Private training meta rewrite.** 4,209 impressions, position 7.22, 1.35% CTR. At position 7, floor CTR is ~3–4%. Title needs a hook: price anchor, Derek Roth's credential, or 1-on-1 specificity.
 
 ### P2 — Compound growth
+**Derek Roth coach page.** 124 impressions, position 8.35. USA Boxing Coach of the Year 2023 is a unique, defensible credential. A dedicated `/pages/coaches/derek-roth/` page with Person schema would capture these clicks and serve as a trust signal sitewide.
 
-**8. Content/article strategy targeting informational queries**
-Many high-volume queries come from people who aren't ready to sign up yet — they're researching. Capturing these with articles builds topical authority:
+**Muay Thai standalone page.** "Muay thai state college pa" has zero clicks at position 7.80. A 500-word page targeting this query would rank within 30 days given existing domain authority.
 
-- "Is boxing good for fitness?" → Lead into class schedule CTA
-- "How to start boxing as an adult beginner" → Lead into free first class
-- "What to expect at your first MMA class" → Reduces barrier to trial
-- "Boxing vs MMA: which is right for you?" → Links to both course pages
-
-Articles already have an infrastructure (`/pages/articles/`). Use it.
-
-**9. Women's boxing and kickboxing content**
-Multiple zero-click queries: "female boxing classes near me" (2 impressions, 50% CTR!), "women's boxing classes near me", "kickboxing for women near me", "women kickboxing". The gym clearly serves women but the homepage and course pages don't foreground it. A dedicated section or landing page would convert this demand.
-
-**10. Improve internal linking from homepage to inner pages**
-The homepage gets 31,413 impressions and 1,844 clicks — it's the gateway. But inner pages have independent poor performance. Adding strong navigational prompts on the homepage that point to specific course pages (with keyword-rich anchor text) can pass PageRank and improve inner page rankings.
+**Article strategy.** The `/pages/articles/` infrastructure exists. Informational queries ("how to start boxing", "is boxing good for fitness") capture researchers before they're ready to sign up and build topical authority.
 
 ---
 
 ## Competitive Landscape
 
-| Competitor | URL | Position | Threat Level |
-|---|---|---|---|
-| Central PA MMA (CPAMMA) | cpamma.com | Strong local presence, Penn State partner | **High** |
-| Lombard MMA | lombardmma.com | 20+ year presence, Yelp/directory dominance | Medium |
-| American Top Team–Happy Valley | — | Bo Nickal affiliation, recent launch | **High (rising)** |
-| State College MMA | statecollegemma.com | Exists but weaker digital presence | Low |
+| Competitor | Threat level | Differentiation |
+|---|---|---|
+| CPAMMA (cpamma.com) | High — strong Penn State ties | Legacy Boxing owns boxing; CPAMMA owns BJJ/grappling |
+| American Top Team–Happy Valley | High and rising — Bo Nickal affiliation | Legacy Boxing: USA Boxing certified, youth programs, competition hosting (Keystone Games) |
+| Lombard MMA | Medium — 20+ year presence | Legacy Boxing: newer, more modern digital presence |
 
-**Key threat: American Top Team (Bo Nickal's gym)** — NCAA champion, high-profile, brand new. Will rapidly accumulate reviews and media coverage. Legacy Boxing must establish clear differentiation: USA Boxing certification, Derek Roth's credentials, youth programs, competition track record (Keystone Games hosting).
-
-**Key advantage to press:** Legacy Boxing appears 4x in top results for "boxing gym state college pa" and ranks #1 for "boxing state college" (pos 1.56). CPAMMA is stronger on Muay Thai/BJJ branding. Legacy should own the boxing-specific queries while acknowledging the broader MMA offering.
+**Key advantage to press:** Legacy Boxing ranks #1 for "boxing state college" (pos 1.56, 25.77% CTR). CPAMMA is stronger on Muay Thai/BJJ. Double down on boxing-specific identity while acknowledging the broader MMA/Kosen Judo offering.
 
 ---
 
-## Technical SEO Checklist
+## Schema Types in Use
+
+| Type | Pages |
+|---|---|
+| `WebSite` | Home |
+| `SportsActivityLocation` + `ExerciseGym` + `MartialArtsSchool` + `AggregateRating` | Home (business.ts — applies sitewide) |
+| `Course` + `FAQPage` + `BreadcrumbList` | Boxing, MMA, Youth Programs, Private Training, Women's Boxing |
+| `Service` | Private Training |
+| `SportsEvent` + `BreadcrumbList` | Keystone Games |
+| `Article` / `BlogPosting` | Article pages |
+| `VideoObject` | Gallery (5 videos) |
+
+All types defined in `pages/scripts/jsonld/types.ts`, validated by `tsc` at build time.
+
+---
+
+## Technical SEO Status
 
 - [x] Sitemap auto-generated (`vite-plugin-sitemap`)
 - [x] Canonical URLs on all pages
-- [x] Open Graph tags on all pages
-- [x] Twitter card tags on all pages
-- [x] JSON-LD structured data on all pages (validated at `tsc` time)
-- [x] Mobile-first responsive design
-- [x] Inter variable font preloaded
+- [x] Open Graph + Twitter card tags on all pages
+- [x] JSON-LD structured data on all pages (build-time validated)
+- [x] AggregateRating schema (18 reviews, 5 stars)
+- [x] VideoObject schema (5 videos on gallery page)
+- [x] `/pages/pricing/` 404 resolved (redirect to /membership/)
+- [x] Mobile-first responsive design (70% mobile traffic)
 - [x] WebP image optimization at build
 - [x] `robots.txt` present
-- [ ] AggregateRating schema (missing — high CTR impact)
-- [ ] `/pages/pricing/` 404 (indexed, receiving traffic, no destination)
-- [ ] Inner page meta titles/descriptions need rewrite
-- [ ] VideoObject schema for training videos in `/public/`
-- [ ] Penn State–targeted landing page
-- [ ] Dedicated Muay Thai / Judo pages
 - [ ] Derek Roth coach/about page with Person schema
+- [ ] Muay Thai standalone page
+- [ ] Boxing course page meta rewrite
+- [ ] Private training meta rewrite
+- [ ] GBP completeness audit
 
 ---
 
-## Schema types in use
+## Measurement
 
-Defined in `pages/scripts/jsonld/types.ts`, validated at build time by `tsc`:
-
-| Type | Pages using it |
-|---|---|
-| `WebSite` | Home |
-| `SportsActivityLocation` + `ExerciseGym` + `MartialArtsSchool` | Home (business) |
-| `Course` + `FAQPage` | Boxing, MMA, Youth Programs, Private Training |
-| `Service` | Private Training |
-| `SportsEvent` | Keystone Games |
-| `Article` / `BlogPosting` | Article pages |
-| `BreadcrumbList` | All pages |
-
-**To add `AggregateRating`:** Add the interface to `types.ts`, extend the business schema in `pages/scripts/jsonld/business.ts`, and pull review count/rating from a maintained constant in `shared.ts`.
-
----
-
-## Tracking & Measurement
-
-- **GA4 property:** G-9LQ8HHZE9B (via `vite-plugin-radar`)
-- **GSC property:** legacy-boxing.com
-- **Baseline CTR targets for inner pages:** 4% within 60 days of meta rewrite
-- **Priority pages to monitor weekly:** MMA, Membership, Boxing course
-- **Key metric:** Inner pages' share of total clicks (currently 11% — target 25%+)
+- **GA4:** G-9LQ8HHZE9B (via `vite-plugin-radar`)
+- **GSC:** legacy-boxing.com
+- **Next GSC pull:** 2026-05-22 — check membership/MMA/contact CTR against baselines above
+- **Target:** Inner pages' share of total clicks: currently 11%, target 25%+ within 6 months
+- **Key metric to watch weekly:** "legacy boxing state college" position (brand + location, clean signal)

@@ -62,6 +62,22 @@ const mmaFaq: FAQPage = {
     },
     {
       '@type': 'Question',
+      name: 'Do you offer Muay Thai classes in State College?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Muay Thai striking is a core part of our MMA curriculum. Every MMA class includes Muay Thai technique — kicks, knees, elbows, and clinch work — taught with proper structure and MMA application. If you are looking for Muay Thai classes near Penn State or in State College, our MMA membership gives you exactly that, combined with grappling and boxing in one complete program.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Kosen Judo similar to jiu-jitsu? What grappling do you teach?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Very similar in outcome, different in origin. Kosen Judo is the branch of judo developed at Japanese technical colleges where throws and takedowns flow directly into sustained ground fighting rather than resetting. You train to take opponents down and finish with pins, chokes, and joint locks — the same core skills as BJJ, from the same historical root. Mitsuyo Maeda, who taught the Gracie family, was a Kosen Judo practitioner. If you have been looking for grappling or jiu-jitsu classes in State College, our Kosen Judo curriculum covers that ground and integrates directly with the striking in our MMA program.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Do you offer MMA classes for teens or kids?',
       acceptedAnswer: {
         '@type': 'Answer',
