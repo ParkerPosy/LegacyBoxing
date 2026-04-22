@@ -8,9 +8,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 npm run dev       # Start dev server (hot reload, sourcemaps enabled)
 npm run build     # Type-check with tsc, then build all pages to /dist
 npm run preview   # Preview the production build locally
+npm run check     # Run tsc type-check + meta/link validation script
+npm run lhci      # Build + Lighthouse CI audit (perf, a11y, SEO scores)
 ```
 
-There are no tests. `tsc` (run as part of `build`) is the primary correctness check — JSON-LD schemas are validated at compile time, so a build failure often means a schema type error.
+**Always run `npm run check` after making changes.** It catches missing meta tags, broken internal links, and TypeScript errors before a build. JSON-LD schemas are also validated at compile time by `tsc`, so a schema type error is a check failure.
+
+Run `npm run lhci` when touching layout, images, or anything that could affect Core Web Vitals. Reports are saved to `.lighthouseci/` (gitignored). Thresholds: performance ≥ 0.9 (warn), accessibility ≥ 0.9 (error), SEO ≥ 0.9 (error).
 
 ## Architecture
 
