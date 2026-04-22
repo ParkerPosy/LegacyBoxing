@@ -45,6 +45,7 @@ export default defineConfig(({ mode }) => ({
         keystoneGames: resolve(__dirname, 'pages/events/keystone-games/index.html'),
         articles: resolve(__dirname, 'pages/articles/index.html'),
         articleKeystoneGames: resolve(__dirname, 'pages/articles/legacy-boxing-hosts-keystone-games-2026/index.html'),
+        pricing: resolve(__dirname, 'pages/pricing/index.html'),
       },
       output: {
         manualChunks(id) {
