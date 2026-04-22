@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => ({
         main: resolve(__dirname, 'index.html'),
         boxing: resolve(__dirname, 'pages/courses/boxing/index.html'),
         mma: resolve(__dirname, 'pages/courses/mma/index.html'),
+        womensBoxing: resolve(__dirname, 'pages/courses/womens-boxing/index.html'),
         youthPrograms: resolve(__dirname, 'pages/courses/youth-programs/index.html'),
         privateTraining: resolve(__dirname, 'pages/courses/private-training/index.html'),
         schedule: resolve(__dirname, 'pages/courses/schedule/index.html'),
