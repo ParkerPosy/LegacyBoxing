@@ -19,7 +19,7 @@ export const businessSchema = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '5',
-    reviewCount: '18',
+    reviewCount: '27',
     bestRating: '5',
     worstRating: '1',
   },
@@ -50,9 +50,16 @@ export const businessSchema = {
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Thursday'],
+      dayOfWeek: 'Monday',
       opens: '09:30',
       closes: '19:45',
+    },
+    {
+      // MMA runs 7:30-9:00 PM on Tue/Thu, so the gym is open until 21:00.
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Tuesday', 'Thursday'],
+      opens: '09:30',
+      closes: '21:00',
     },
     {
       '@type': 'OpeningHoursSpecification',
@@ -89,7 +96,7 @@ export const businessSchema = {
       'Kickboxing',
       'Wrestling',
     ],
-    award: '2023 Pennsylvania USA Boxing Coach of the Year',
+    award: '2023 NCBA Coach of the Year',
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
