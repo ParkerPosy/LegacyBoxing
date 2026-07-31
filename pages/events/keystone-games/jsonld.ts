@@ -7,18 +7,18 @@ const keystoneEvent: SportsEvent = {
   '@context': 'https://schema.org',
   '@type': 'SportsEvent',
   name: 'Keystone Games Combat Sports Showcase 2026',
-  description: `Boxing and MMA competition hosted by ${BUSINESS_NAME} as part of the 2026 State Games of America. Held at 2820 East College Ave, Suite F, State College, PA.`,
-  startDate: '2026-08-01',
-  endDate: '2026-08-02',
+  description: `Boxing and MMA competition hosted by ${BUSINESS_NAME} as part of the 2026 State Games of America. First bell 5:00 PM at the Ramada Inn & Conference Center, 1450 S Atherton St, State College, PA.`,
+  startDate: '2026-08-01T17:00:00-04:00',
+  endDate: '2026-08-01T22:00:00-04:00',
   eventStatus: 'https://schema.org/EventScheduled',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   image: `${SITE_URL}/og-image.png`,
   location: {
     '@type': 'Place',
-    name: BUSINESS_NAME,
+    name: 'Ramada Inn & Conference Center',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '2820 East College Ave, Suite F',
+      streetAddress: '1450 S Atherton St',
       addressLocality: 'State College',
       addressRegion: 'PA',
       postalCode: '16801',
@@ -48,14 +48,6 @@ const keystoneEvent: SportsEvent = {
       },
     },
   },
-  offers: {
-    '@type': 'Offer',
-    url: 'https://event.racereach.com/keysg-boxing',
-    availability: 'https://schema.org/InStock',
-    price: '45.00',
-    priceCurrency: 'USD',
-    description: 'Open & Masters divisions $45; Youth divisions $35',
-  },
 };
 
 const keystoneFaq: FAQPage = {
@@ -67,7 +59,7 @@ const keystoneFaq: FAQPage = {
       name: 'What is the State Games of America?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The State Games of America is the nation\'s largest multi-sport Olympic-style event for amateur athletes. In 2026 it will be hosted in State College, PA, featuring 50+ sports and thousands of competitors from across the country. The Combat Sports Showcase takes place at Legacy Boxing (2820 East College Ave, Suite F).',
+        text: 'The State Games of America is the nation\'s largest multi-sport Olympic-style event for amateur athletes. In 2026 it will be hosted in State College, PA, featuring 50+ sports and thousands of competitors from across the country. The Combat Sports Showcase runs Saturday, August 1 at the Ramada Inn & Conference Center, 1450 S Atherton St, with the first bell at 5:00 PM.',
       },
     },
     {
@@ -75,15 +67,7 @@ const keystoneFaq: FAQPage = {
       name: 'Who can compete in the Combat Sports Showcase?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Boxing is open to amateur athletes from USA Boxing registered clubs and NCBA collegiate programs. MMA eligibility details will be announced once the event page is published. Check the Keystone Games eligibility guidelines for general requirements.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How do I register?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Boxing registration is open now through RaceReach. Click the Register for Boxing button on this page to go directly to the registration portal. MMA registration details are coming soon - contact us for updates.',
+        text: 'The card is made up of amateur athletes from USA Boxing registered clubs and NCBA collegiate programs. Bouts are matched by NCBA weight class, with certified officials and full USA Boxing safety protocols.',
       },
     },
     {
